@@ -296,10 +296,7 @@ The table below lists the available attributes which can be used to personalize 
   <tr>
     <td align="left">enablePhotoSharing</td>
     <td align="left">Bool</td>
-    <td align="left">True
-Enables Photo Sharing feature
-False
-Disables Photo Sharing</td>
+    <td align="left">True - Enables Photo Sharing feature, False - Disables Photo Sharing</td>
     <td align="left"></td>
     <td align="left">false</td>
   </tr>
@@ -339,6 +336,21 @@ Disables Photo Sharing</td>
     <td align="left">UIColor.white</td>
   </tr>
   <tr>
+
+    <td align="left">cameraButtonEnabledColor</td>
+    <td align="left">UIColor</td>
+    <td align="left">Photo Sharing Camera button color in enabled mode in the conversation screen. Will be presented only if photo sharing feature is enabled</td>
+    <td align="left"><img src="img/cameraButtonColor.png" alt="cameraButtonColor"></td>
+    <td align="left">#0362AC</td>
+  </tr>
+  <tr>
+    <td align="left">cameraButtonDisabledColor</td>
+    <td align="left">UIColor</td>
+    <td align="left">Photo Sharing Camera button color in disabled mode in the conversation screen. Will be presented only if photo sharing feature is enabled</td>
+    <td align="left"><img src="img/cameraButtonColor.png" alt="cameraButtonColor"></td>
+    <td align="left">#8B8A8F</td>
+  </tr>
+  <tr>
     <td align="left">fileCellLoaderFillColor</td>
     <td align="left">UIColor</td>
     <td align="left">Radial loader fill color</td>
@@ -364,8 +376,6 @@ Disables Photo Sharing</td>
   </tr>
 </tbody>
 </table>
-
-
 
 ### Send Button
 
@@ -830,7 +840,7 @@ It will affect the following areas:
     <td align="left">String</td>
     <td align="left">The brand name will be shown as a title on toolbar when there is no active conversation. </td>
     <td align="left"></td>
-    <td align="left">"BrandName"</td>
+    <td align="left">"" (Empty String)</td>
   </tr>
   <tr>
     <td align="left">conversationBackgroundColor</td>
@@ -838,6 +848,21 @@ It will affect the following areas:
     <td align="left">Color code for the entire view background.</td>
     <td align="left"></td>
     <td align="left">UIColor.white</td>
+  </tr>
+  <tr>
+    <td align="left">customFontNameConversationFeed</td>
+    <td align="left">String?</td>
+    <td align="left"> Custom font name for conversation feed. This font will affect all Messages, Timestamp and Separators. Fonts that are not part of the iOS families, must be defined in App's Info.plist</td>
+    <td align="left"><img src="img/customFontNameConversationFeed.png" alt="customFontNameConversationFeed"></td>
+    <td align="left">nil</td>
+  </tr>
+  <tr>
+    <td align="left">customFontNameNonConversationFeed</td>
+    <td align="left">String?</td>
+    <td align="left"> Custom font name for all non conversation feed controls. Such as: Buttons, Alerts, Banners, Menu and External Windows.
+    Fonts that are not part of the iOS families, must be defined in App's Info.plist</td>
+    <td align="left"><img src="img/customFontNameNonConversationFeed.png" alt="customFontNameNonConversationFeed"></td>
+    <td align="left">nil</td>
   </tr>
 </tbody>
 </table>
@@ -1174,6 +1199,13 @@ Note: this parameter will be extended to 60sec when in VoiceOver mode.</td>
     <td align="left">Icon color of default remoteUser avatar.</td>
     <td align="left">#0362AC</td>
     <td align="left">#FFFFFF</td>
+  </tr>
+  <tr>
+    <td align="left">remoteUserDefaultAvatarImage</td>
+    <td align="left">UIImage?</td>
+    <td align="left">Default Avatar image of the remote user. When assigned, this image will disable remoteUserAvatarBackgroundColor and remoteUserAvatarIconColor configurations.  If remote user has an avatar image in his profile, this attribute will be ignored.</td>
+    <td align="left"><img src="img/remoteUserDefaultAvatarImage.png"</td>
+    <td align="left">nil</td>
   </tr>
   <tr>
     <td align="left">brandAvatarImage</td>
