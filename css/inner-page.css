@@ -51,15 +51,7 @@ h4[id]{
   width: 100%;
 }
 
-.designsheet td {
-  font-size: 1.2em;
-  line-height: 2.4em !important;
-}
 
-.designsheet img {
-    width: auto !important;
-    float: right;
-}
 
 .post-content table td:first-child {
   width:unset;
@@ -89,6 +81,32 @@ table > thead > tr > th {
     color: #666666;
     font-family: "Open Sans",Arial;
     font-size: 0.8em;
+}
+
+.designsheet table tr td {
+  font-size: 1.1em;
+  /*line-height: 2.4em !important;*/
+  text-align: center;
+  font-weight: bold;
+}
+
+.designsheet img {
+    width: auto !important;
+    float: right;
+}
+
+.designsheetnumber {
+  margin-bottom: 7%;
+  padding-top: 3%;
+  margin-left: 40%;
+  border: 3px solid darkorange;
+  height: 50px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 50px;
+  background-color: orange;
+  color: #fff;
 }
 
 code {
