@@ -26,7 +26,7 @@ indicator: messaging
   </tr>
   <tr>
   <td><div class="designsheetnumber">3</div> &lt;dimen name=&quot;brand_bubble_stroke_width&quot;&gt; , &lt;color name=&quot;brand_bubble_stroke_color&quot;&gt; , &lt;color name=&quot;brand_bubble_message_text_color&quot;&gt; , &lt;color name=&quot;brand_bubble_message_link_text_color&quot;&gt; , &lt;color name=&quot;brand_bubble_timestamp_text_color&quot;&gt; ,  &lt;color name=&quot;brand_bubble_background_color&quot;&gt; , &lt;color name=&quot;brand_logo_background_color&quot;&gt; </td>
-  <td><img src="Brand messaging bubbles first message (3).png"/></td>
+  <td><img src="img/Brand messaging bubbles first message (3).png"/></td>
   </tr>
   <tr>
     <td><div class="designsheetnumber">4</div> &lt;dimen name=&quot;agent_bubble_stroke_width&quot;&gt; ,  &lt;color name=&quot;agent_bubble_stroke_color&quot;&gt; , &lt;color name=&quot;agent_bubble_message_text_color&quot;&gt;</td>

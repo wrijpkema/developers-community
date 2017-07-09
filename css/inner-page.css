@@ -84,7 +84,7 @@ table > thead > tr > th {
 }
 
 .designsheet table tr td {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 2.4em !important;
   text-align: center;
   font-weight: bold;
@@ -96,8 +96,9 @@ table > thead > tr > th {
 }
 
 .designsheetnumber {
+  font-size: 2.5em;
   margin-bottom: 7%;
-  padding-top: 0.5%;
+  padding-top: 1.5%;
   margin-left: 40%;
   border: 3px solid darkorange;
   height: 50px;
