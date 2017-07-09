@@ -12,7 +12,7 @@ indicator: messaging
 <div class="designsheet">
 <table rules="all">
   <thead>
-  <col width="45%">
+  <col width="60%">
   <tr>
     <th>Name</th>
     <th>Design Example</th>

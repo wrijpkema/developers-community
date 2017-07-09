@@ -84,7 +84,7 @@ table > thead > tr > th {
 }
 
 .designsheet table tr td {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 2.4em !important;
   text-align: center;
   font-weight: bold;
