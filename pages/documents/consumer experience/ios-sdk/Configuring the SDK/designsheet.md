@@ -9,6 +9,7 @@ permalink: consumer-experience-ios-sdk-attributes-design-sheet.html
 indicator: messaging
 ---
 
+
 <div class="designsheet">
 <table rules="all">
   <thead>
