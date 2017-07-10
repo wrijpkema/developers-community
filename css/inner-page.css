@@ -90,6 +90,14 @@ table > thead > tr > th {
   font-weight: bold;
 }
 
+.designsheet table tr th {
+  background-color: #162036;
+  font-family: "Open Sans";
+  font-size: 0.8888em;
+  font-weight: bold;
+  color: #fff;
+}
+
 .designsheet img {
     width: auto !important;
     float: right;

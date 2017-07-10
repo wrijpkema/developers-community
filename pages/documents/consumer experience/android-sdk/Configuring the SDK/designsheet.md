@@ -21,7 +21,7 @@ indicator: messaging
   </thead>
   <tbody>
   <tr>
-    <td><div class="designsheetnumber">1</div> <div class="designsheetnumber">2</div> &lt;integer name=&quot;message_receive_icons&quot;&gt; , &lt;string-array name=&quot;message_receive_text&quot;&gt; , &lt;bool name=&quot;clear_history_show_confirm_dialog&quot;&gt;</td>
+    <td><div class="designsheetnumber" style="font-size: 1.5em">1 / 2</div> &lt;integer name=&quot;message_receive_icons&quot;&gt; , &lt;string-array name=&quot;message_receive_text&quot;&gt; , &lt;bool name=&quot;clear_history_show_confirm_dialog&quot;&gt;</td>
     <td><img src="img/Brand (1,2).png"/></td>
   </tr>
   <tr>
@@ -48,10 +48,10 @@ indicator: messaging
   </tr>
   <tr>
     <td> <div class="designsheetnumber">9</div> &lt;dimen name=&quot;consumer_bubble_stroke_width&quot;&gt; , &lt;color name=&quot;consumer_bubble_message_text_color&quot;&gt; ,  &lt;color name=&quot;consumer_bubble_message_link_text_color&quot;&gt; , &lt;color name=&quot;consumer_bubble_timestamp_text_color&quot;&gt; , &lt;color name=&quot;consumer_bubble_background_color&quot;&gt; , >&lt;color name=&quot;consumer_bubble_state_text_color&quot;&gt; , &lt;color name=&quot;consumer_bubble_stroke_color&quot;&gt; </td>
-    <td rownspan="3"><img src="img/Consumer message bubbles (9,10,11).png"/></td>
+    <td rowspan="3"><img src="img/Consumer message bubbles (9,10,11).png"/></td>
   </tr>
   <tr>
-    <td><div class="designsheetnumber">10</div> &lt;color name=&quot;consumer_bubble_link_preview_background_color&quot;&gt; </td>
+    <td><div class="designsheetnumber">10</div> &lt;color name=&quot;consumer_bubble_link_preview_background_color&quot;&gt;</td>
   </tr>
   <tr>
     <td><div class="designsheetnumber">11</div> &lt;color name=&quot;consumer_bubble_link_preview_title_text_color&quot;&gt; , &lt;color name=&quot;consumer_bubble_link_preview_description_text_color&quot;&gt; </td>
