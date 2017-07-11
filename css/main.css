@@ -294,7 +294,7 @@
 }
  .ds-dropdown-menu [class^=ds-dataset-] {
     position: relative;
-    /*border: 1px solid #d9d9d9;*/
+    border: 1px solid #d9d9d9;
     background: #fff;
     border-radius: 4px;
     overflow: auto;
@@ -332,7 +332,9 @@
     width: 70%;
     position: relative;
     padding: 5.33333px 0 5.33333px 10.66667px;
-    cursor: pointer
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
  .algolia-docsearch-suggestion--content:before {
     content: "";
@@ -346,14 +348,12 @@
 }
  .algolia-docsearch-suggestion--category-header {
     position: relative;
-    border-bottom: 2px solid #FF720B;
+    border-bottom: 1px solid #ddd;
     display: none;
     margin-top: 8px;
     padding: 4px 0;
-    font-size: 1.125em;
-    color: #333333;
-    font-family: "Roboto Slab","Open Sans",Arial,Helvetica,sans-serif;
-    font-weight: bold;
+    font-size: 1em;
+    color: #33363d
 }
  .algolia-docsearch-suggestion--wrapper {
     width: 100%;
@@ -365,12 +365,14 @@
     width: 30%;
     display: none;
     padding-left: 0;
-    text-align: right;
+    /*text-align: right;*/
     position: relative;
-    padding: 5.33333px 10.66667px;
+    padding: 5.33333px 0px;
     color: #a4a7ae;
     font-size: .9em;
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
  .algolia-docsearch-suggestion--subcategory-column:before {
     content: "";
@@ -391,14 +393,14 @@
 }
  .algolia-docsearch-suggestion--title {
     margin-bottom: 4px;
-    color: #02060c;
-    font-size: .9em;
+    color: #5879DA;
+    font-size: 1.063em;
     font-weight: 700
 }
  .algolia-docsearch-suggestion--text {
     display: block;
-    line-height: 1.2em;
-    font-size: .85em;
+    /*line-height: 1.2em;*/
+    font-size: 1em;
     color: #63676d
 }
  .algolia-docsearch-suggestion--no-results {
@@ -541,7 +543,7 @@ display: block;
 .aa-input-search {
   color: white;
   padding: 12px 80px 12px 12px;
-  border-color: #5879DA;
+  border-color: #33c6f4;
   border-radius: 50px;
   border-style: solid;
   font-family: "Open Sans", sans-serif;
@@ -581,13 +583,12 @@ display: block;
   background-color: #162036;
   /*border: 2px solid rgba(228, 228, 228, 0.6);*/
   border-top-width: 1px;
-  font-family: "Montserrat", sans-serif;
-  width: 300px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
   margin-top: 10px;
   /*font-size: 11px;*/
   border-radius: 4px;
   box-sizing: border-box;
-  margin-left: 15%;
 }
  .ds-dropdown-menu {
 
