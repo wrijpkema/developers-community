@@ -67,10 +67,10 @@ The id_token in the response is standard JWT and can be translated to the unpack
 {
    "iss": "www.customer.com",			# issuer
    "sub": "fdskjfd-user-id-3773hshshs", 	# user id
-   "exp": “1353801026”,			      # expiration timestamp
-   "iat": "1353601026”,			      	# token issuing  timestamp
-   "email": "user@gmail.com”,
-   "picture": "http://www.customer.com/pics/fdskjfd-user-id-3773hshshs”
+   "exp": "1353801026",			      # expiration timestamp
+   "iat": "1353601026",			      	# token issuing  timestamp
+   "email": "user@gmail.com",
+   "picture": "http://www.customer.com/pics/fdskjfd-user-id-3773hshshs"
 }
 ```
 
