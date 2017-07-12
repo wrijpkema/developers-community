@@ -11,6 +11,8 @@ permalink: android-attributes.html
 
 indicator: messaging
 ---
+The goal of the following document is to enumerate the different fields controlling design attributes in the SDK. If a clearer view of which attribute corresponds with a design element, please utilize the [Attributes Design Sheet](android-attributes-designsheet.html){:target="_blank"}.
+
 
 ### Brand
 

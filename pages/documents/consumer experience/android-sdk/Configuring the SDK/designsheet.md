@@ -1,10 +1,11 @@
 ---
 title: Attributes Design Sheet
 Keywords:
-level1:
+level1: Documents
 level2: Consumer Experience
 level3: In-App Messaging SDK for Android
 level4: Customization and Branding
+order: 265
 permalink: android-attributes-designsheet.html
 indicator: messaging
 ---
