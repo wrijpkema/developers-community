@@ -261,19 +261,9 @@
     background: transparent;
     border: none;
     z-index: 1;
-    /*max-width: 600px;*/
+    max-width: 600px;
     min-width: 500px;
     /*box-shadow: 0 1px 0 0 rgba(0, 0, 0, .2), 0 2px 3px 0 rgba(0, 0, 0, .1)*/
-    background-color: #162036;
-    /*border: 2px solid rgba(228, 228, 228, 0.6);*/
-
-    font-family: "Open Sans", sans-serif;
-    width: 100%;
-    margin-top: 10px;
-    /*font-size: 11px;*/
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-left: 15%;
 }
  .ds-dropdown-menu:before {
     display: block;
@@ -304,11 +294,12 @@
 }
  .ds-dropdown-menu [class^=ds-dataset-] {
     position: relative;
-    /*border: 1px solid #d9d9d9;*/
+    border: 1px solid #d9d9d9;
     background: #fff;
     border-radius: 4px;
     overflow: auto;
-    padding: 0 8px 8px
+    padding: 0 8px 8px;
+    padding-left: 7%;
 }
  .ds-dropdown-menu * {
     box-sizing: border-box
@@ -358,17 +349,16 @@
 }
  .algolia-docsearch-suggestion--category-header {
     position: relative;
-    border-bottom: 2px solid #FF720B;
+    border-bottom: 1px solid #ddd;
     display: none;
     margin-top: 8px;
     padding: 4px 0;
-    font-size: 1.125em;
-    color: #333333;
-    font-weight: bold;
-    font-family: "Roboto Slab","Open Sans",Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    color: #33363d;
+    width: 40%;
 }
  .algolia-docsearch-suggestion--wrapper {
-    width: 40%;
+    width: 100%;
     float: left;
     padding: 8px 0 0
 }
@@ -381,8 +371,7 @@
     position: relative;
     padding: 5.33333px 0px;
     color: #a4a7ae;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: .9em;
     word-wrap: break-word;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -588,11 +577,30 @@ display: block;
   fill: #fff;
 }
 
+.aa-suggestion-title-separator {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .aa-hint {
   color: #e4e4e4;
 }
 
+.ds-dropdown-menu {
+  background-color: #162036;
+  /*border: 2px solid rgba(228, 228, 228, 0.6);*/
+  border-top-width: 1px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  margin-top: 10px;
+  /*font-size: 11px;*/
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ .ds-dropdown-menu {
 
+}
 .aa-suggestion {
   padding: 12px;
   border-top: 1px solid rgba(228, 228, 228, 0.6);
