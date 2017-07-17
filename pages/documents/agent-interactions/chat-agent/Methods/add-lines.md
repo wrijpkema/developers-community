@@ -48,7 +48,7 @@ Request body example:
     "event": {
     "@type": "line",
     "text": "<div dir="ltr" style="direction: ltr; text-align: left;">this is a line of text</div>",
-    "textType": "plain"
+    "textType": "html"
     }
     }
 
