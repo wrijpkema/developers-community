@@ -54,7 +54,9 @@ Request body example:
 
 **Text Types**
 
-It is possible to add different types of lines to the chat. When no text type is defined, it is assumed that a plain type was submitted. _Note_: to make sure that the LiveEngage UI displays your text correctly, it is important to use the HTML format as seen in the example above.
+It is possible to add different types of lines to the chat. When no text type is defined, it is assumed that a plain type was submitted.
+
+_Note_: our embedded window relies on the LE Agent UI to display the above sent text in an HTML format with a "<div>" wrapper. Therefore, to make sure that the LiveEngage UI displays your text correctly, it is important to use the HTML format as seen in the example above.
 
 Changing the text type is handled as follows:
 
