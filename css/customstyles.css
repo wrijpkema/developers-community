@@ -1480,4 +1480,9 @@ only screen and (                min-resolution: 2dppx) {
   z-index: 300000;
 }
 
+.codev-slash{
+  display: inline;
+  color: #FF720B;
+}
+
 /* End development summit page */
