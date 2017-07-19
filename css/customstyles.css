@@ -1485,4 +1485,19 @@ only screen and (                min-resolution: 2dppx) {
   color: #FF720B;
 }
 
+.achieve-left {
+  margin-bottom: 10px;
+  font-size: 1.2em
+}
+
+.achieve-right {
+  margin-bottom: 10px;
+  font-size: 1.2em
+}
+
+.achieve-main {
+  color: #FF720B;
+  font-weight: bold;
+}
+
 /* End development summit page */
