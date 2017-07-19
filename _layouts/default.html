@@ -58,6 +58,14 @@
 <!-- /.container -->
     </div>
  {% include footer.html %}
+<script type="text/javacript">
+$('.aa-search-input').focus(function()          //whenever you click on the search input element
+{
+    if( $(this).val() ) {                      //if it is not blank.
+         $('body').addClass('search-opened');
+    }
+});
+</script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 <script type="text/javascript"> docsearch({
 apiKey: 'e386ebed16c8f70de3c914b3ace55ae6',
