@@ -59,15 +59,19 @@
     </div>
  {% include footer.html %}
 <script type="text/javascript">
-$(".aa-input-search").focus(function()
-{
-  if( ($(".aa-input-search").text() != null) && ($(".aa-input-search").text() != "")) {
-       $("body").addClass("search-opened");
-  }
-});
+var inputElement = document.getElementById("aa-search-input");
 
 
-
+inputElement.setAttribute("oninput", "onInput(this)");
+function onInput(el) {
+    setTimeout(function () {
+        if (el && el.value) {
+            $("body").addClass("search-opened");
+        } else {
+            $("body").removeClass("search-opened");
+        }
+    }, 0);
+}
 </script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 <script type="text/javascript"> docsearch({
