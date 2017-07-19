@@ -58,13 +58,16 @@
 <!-- /.container -->
     </div>
  {% include footer.html %}
-<script type="text/javacript">
-$('.aa-search-input').focus(function()          //whenever you click on the search input element
+<script type="text/javascript">
+$(".aa-input-search").focus(function()
 {
-    if( $(this).val() ) {                      //if it is not blank.
-         $('body').addClass('search-opened');
-    }
+  if( ($(".aa-input-search").text() != null) && ($(".aa-input-search").text() != "")) {
+       $("body").addClass("search-opened");
+  }
 });
+
+
+
 </script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 <script type="text/javascript"> docsearch({
