@@ -1525,4 +1525,31 @@ only screen and (                min-resolution: 2dppx) {
   margin-left: 40px;
 }
 
+.achieve-list {
+  text-align: left;
+}
+
+.reading {
+  margin-top: 40px;
+  font-size: 1.4em;
+  display: inline-block;
+}
+
+.newyork {
+  float: left;
+  font-size: 1.4em;
+  margin-top: 40px;
+}
+
+.melbourne {
+  float: right;
+  font-size: 1.4em;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.satellite {
+  font-weight: bold;
+}
+
 /* End development summit page */
