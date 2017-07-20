@@ -1487,17 +1487,42 @@ only screen and (                min-resolution: 2dppx) {
 
 .achieve-left {
   margin-bottom: 10px;
-  font-size: 1.2em
+  font-size: 1.2em;
+  float: left;
+  margin-top: 10px;
 }
 
 .achieve-right {
   margin-bottom: 10px;
-  font-size: 1.2em
+  font-size: 1.2em;
+  float: right;
+  margin-top: 10px;
 }
 
 .achieve-main {
-  color: #FF720B;
+  color: #162036;
   font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.bottom-pane {
+  color: #162036;
+  font-size: 48px;
+  line-height: 64px;
+  font-family: 'roboto slab', arial;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.needtoknow {
+  text-align: left;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 /* End development summit page */
