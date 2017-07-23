@@ -21,7 +21,7 @@ Each Engagement Attribute has its own data structure and can be sent to LivePers
 
 **Code example**:
 
-```JavaScript
+```javascript
 lpTag.sdes = lpTag.sdes||[];
 lpTag.sdes.push(
 // SDEs located here
