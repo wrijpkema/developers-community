@@ -6,7 +6,7 @@ level3: Authentication
 
 permalink: guides-authentication-introduction.html
 root-link: true
-level-order: 4
+level-order: 6
 order: 1
 indicator: both
 ---
