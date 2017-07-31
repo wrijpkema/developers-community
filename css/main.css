@@ -59,6 +59,10 @@ pre code {
   color: #fff;
 }
 
+pre {
+  background-color: #162036;
+}
+
 /*left nav bar */
 #mysidebar.nav li a {
     background-color: white;
