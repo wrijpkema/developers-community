@@ -26,7 +26,6 @@ The Customer web page method name can be either the default LivePerson method na
 **Code Example**
 
 ```javascript
-<script>
     var lpMethods = {
         lpGetAuthenticationToken: function(callback) {
             log("LP asked for id_token");
@@ -34,10 +33,9 @@ The Customer web page method name can be either the default LivePerson method na
             // On Success
             callback(id_token);
             // On Failure
-            callback(“”,”error reason”);
+            callback("","error reason");
         }
     };
-</script>
 ```
 
 ### OpenID Connect provider (OP) development details
@@ -54,7 +52,7 @@ The Customer web page method name can be either the default LivePerson method na
 
 *	The token (JWT) should contain three base64url encoded segments separated by period ('.') characters.
 
-*	The following HTTP headers are required: header name: “Authorization” The value contains the standard basic authorization header [RFC2617], based on client_id:client_secret provided by the team to identify.
+*	The following HTTP headers are required: header name: “Authorization" The value contains the standard basic authorization header [RFC2617], based on client_id:client_secret provided by the team to identify.
 
 _Example: Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW_
 
@@ -218,7 +216,7 @@ Customized claim sets, for example credit card, will be supported in a future ve
 
 *	The encryption should use RSA algorithm.
 
-*	JWE header should include header name “alg” with the value: RSA_OAEP_256.
+*	JWE header should include header name “alg" with the value: RSA_OAEP_256.
 
 ### OpenID JWT Signing
 
@@ -226,7 +224,7 @@ Customized claim sets, for example credit card, will be supported in a future ve
 
 *	The JWT should be signed with your RSA private key.
 
-*	The public key should be added to LivePerson OAuth configuration in the “JWT Public Key” field, and should be base64 encoded with X509 key spec.
+*	The public key should be added to LivePerson OAuth configuration in the “JWT Public Key" field, and should be base64 encoded with X509 key spec.
 
 ### Extract JWT Public and Private Keys
 

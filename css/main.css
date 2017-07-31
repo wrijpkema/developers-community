@@ -55,6 +55,10 @@
   position: relative;
 }
 
+pre code {
+  color: #fff;
+}
+
 /*left nav bar */
 #mysidebar.nav li a {
     background-color: white;
