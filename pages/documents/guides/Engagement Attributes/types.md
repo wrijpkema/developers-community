@@ -185,8 +185,10 @@ This information can be used to segment visitors and tailor an experience based 
 | lastPaymentDate | Last payment date. This parameter consists of 3 integer fields: year, month, day, | data object  | {<br>"day": 15,<br>"month": 10,<br>"year": 2014<br>} | false |
 | registrationDate | Registration date. This parameter consists of 3 integer fields: year, month, day, | data object  | {<br>"day": 23,<br>"month": 5,<br>"year": 2013<br>} | false |
 | loginStatus | Login status | integer  |  | false |
-| storeZipCode | A store ZIP code the customer is associated with. The ZIP code is mapped to multiple stores in the same geographic area. | string  | "12205" | false |
-| storeNumber  | A specific store number the customer is associated with | string  | "1241" | false |
+| <span style="color:red">storeZipCode</span> | <span style="color:red">A store ZIP code the customer is associated with. The ZIP code is mapped to multiple stores in the same geographic area.</span>  | <span style="color:red">string </span>  | <span style="color:red">"12205" </span> | <span style="color:red">false </span> |
+| <span style="color:red">storeNumber </span>  | <span style="color:red">A specific store number the customer is associated with </span> | <span style="color:red">string </span>  | <span style="color:red">"1241" </span> | <span style="color:red">false </span> |
+
+<span style="color:red;font-weight: bold">Please note - storeZipCode and storeNumber ARE NOT supported in an authenticated flow!</span>
 
 **Customer info SDE JSON example**:
 

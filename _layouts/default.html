@@ -64,11 +64,9 @@ inputElement.setAttribute("oninput", "onInput(this)");
 function onInput(el) {
     setTimeout(function () {
         if (el && el.value) {
-            $("body").addClass("search-opened");
             $(".search-cancel").css("display","block");
             $(".aa-input-icon").css("display", "none");
         } else {
-            $("body").removeClass("search-opened");
             $(".search-cancel").css("display", "none");
             $(".aa-input-icon").css("display","block");
         }
@@ -77,9 +75,9 @@ function onInput(el) {
 };
 
     $(".search-cancel").click(function() {
-      $(inputElement).value = "";
+      inputElement.value = "";
       $(".search-cancel").css("display","none");
-      $("body").removeClass("search-opened");
+      $(".aa-input-icon").css("display","block");
     });
 </script>
 
@@ -93,7 +91,6 @@ algoliaOptions: {
   hitsPerPage: 6
 },
 autocompleteOptions: {
-  dropdownMenuContainer: '#search-container',
   openOnFocus: true,
 }
 });
