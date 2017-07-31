@@ -25,7 +25,7 @@ The Customer web page method name can be either the default LivePerson method na
 
 **Code Example**
 
-```JavaScript
+```javascript
 <script>
     var lpMethods = {
         lpGetAuthenticationToken: function(callback) {
@@ -164,7 +164,7 @@ LivePerson supports the following claims set, which will be displayed to the age
 
 **Custom Claim**:
 
-Custom Claims will be added in LP SDE form from the SDEs list (see the [Engagement Attributes Overview document](engagment-attributes-overview.html){:target="_blank"}. **Please note that some Engagement Attributes are NOT supported in an authenticated flow. However, unless otherwise specified in the document abovce, all attributes are supported).
+Custom Claims will be added in LP SDE form from the SDEs list (see the [Engagement Attributes Overview document](engagment-attributes-overview.html){:target="_blank"}. (**Please note that some Engagement Attributes are NOT supported in an authenticated flow. However, unless otherwise specified in the document abovce, all attributes are supported**).
 
 Example for Mandatory+Standard+Custom Claims JWT:
 
