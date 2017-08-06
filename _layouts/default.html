@@ -58,6 +58,23 @@
 <!-- /.container -->
     </div>
  {% include footer.html %}
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"> </script>
+ <script type="text/javascript">
+ const search = docsearch({
+ apiKey: 'e386ebed16c8f70de3c914b3ace55ae6',
+ indexName: 'liveperson',
+ inputSelector: '.aa-input-search',
+ debug: true,
+ algoliaOptions: {
+   hitsPerPage: 15
+ },
+ autocompleteOptions: {
+   dropdownMenuContainer: '#search-container',
+   openOnFocus: true,
+ }
+ });
+ </script>
+
 <script type="text/javascript">
 var inputElement = document.getElementById("aa-search-input");
 inputElement.setAttribute("oninput", "onInput(this)");
@@ -77,27 +94,17 @@ function onInput(el) {
 };
 
     $(".search-cancel").click(function() {
-      $('.aa-input-search').autocomplete("val", "");
+      setTimeout(function() {
+	       search.autocomplete.autocomplete.setVal('');
+         search.autocomplete.focus();
+      }, 10);
+      $("body").removeClass("search-opened");
       $(".search-cancel").css("display","none");
       $(".aa-input-icon").css("display","block");
     });
 </script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"> </script>
-<script type="text/javascript"> docsearch({
-apiKey: 'e386ebed16c8f70de3c914b3ace55ae6',
-indexName: 'liveperson',
-inputSelector: '.aa-input-search',
-debug: true,
-algoliaOptions: {
-  hitsPerPage: 15
-},
-autocompleteOptions: {
-  dropdownMenuContainer: '#search-container',
-  openOnFocus: true,
-}
-});
-</script>
+
 
 </body>
 {% if site.google_analytics %}
