@@ -11,7 +11,7 @@ permalink: android-attributes.html
 
 indicator: messaging
 ---
-The goal of the following document is to enumerate the different fields controlling design attributes in the SDK. If a clearer view of which attribute corresponds with a design element, please utilize the [Attributes Design Sheet](android-attributes-designsheet.html){:target="_blank"}.
+The goal of the following document is to enumerate the different fields controlling design attributes in the SDK. If a clearer view of which attribute corresponds with a design element is needed, please utilize the [Attributes Design Sheet](android-attributes-designsheet.html).
 
 
 ### Brand
@@ -966,6 +966,33 @@ The goal of the following document is to enumerate the different fields controll
 </tbody>
 </table>
 
+### Custom Fonts
+
+<table>
+<thead>
+ <tr>
+   <th>Name</th>
+   <th>Description</th>
+   <th>Default</th>
+   <th>Example</th>
+ </tr>
+</thead>
+<tbody>  
+   <tr>
+     <td>&lt;string name=&quot;custom_font_name_conversation_feed&quot;&gt;</td>
+     <td>The font name for all conversation feed’s element.</td>
+     <td>Empty (use the device font)</td>
+     <td>sans-serif-thin</td>
+  </tr>
+  <tr>
+    <td>&lt;string name=&quot;custom_font_name_non_conversation_feed&quot;&gt;</td>
+    <td>The font name for all elements that are not in the conversation feed.</td>
+    <td>Empty (use the device font)</td>
+    <td>customFont.ttf</td>
+  </tr>
+</tbody>
+</table>
+
 
 ### Miscellaneous
 
@@ -1038,6 +1065,7 @@ The goal of the following document is to enumerate the different fields controll
     <td>Set the time in seconds before the first the TTR snackbar will be displayed</td>
     <td>10</td>
     <td></td>
+    </tr>
   <tr>
     <td>&lt;bool name=&quot;send_agent_profile_updates_when_conversation_closed&quot;&gt;</td>
     <td>When true the callback LivePersonCallback#onAgentDetailsChanged will be called with the agent details updates even if the last conversation is closed (in this case it will provide the assigned agent of the last conversation). If false, this callback will be called only when the current conversation is active. </td>
@@ -1089,7 +1117,7 @@ The goal of the following document is to enumerate the different fields controll
   <tr>
     <td>&lt;string name=&quot;real_time_mask_character&quot;&gt;</td>
     <td>The character used to mask the real time message.</td>
-    <td>‘*’</td>
+    <td>'*'</td>
     <td><img src="img/realtimemaskcharacter.png" alt="realtimemaskcharacter"></td>
   </tr>
   <tr>
@@ -1149,7 +1177,6 @@ The goal of the following document is to enumerate the different fields controll
   </tr>
 </thead>
 <tbody>    
-  </tr>
   <tr>
     <td>&lt;string name=&quot;custom_button_icon_name&quot;&gt;</td>
     <td>Custom button icon filename without extension. This will be displayed on the toolbar.</td>
