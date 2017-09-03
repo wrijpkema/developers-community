@@ -1,5 +1,5 @@
 ---
-title: Get Messages
+title: CoBrowse
 level1: Documents
 level2: Consumer Experience
 level3: Messaging Window API
