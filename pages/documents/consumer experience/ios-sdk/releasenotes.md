@@ -705,6 +705,7 @@ The following properties for the controller bubble can now be configured:
 These are the main feature releases available in the In-App Messaging SDK version 2.7 for iOS.
 Version 2.7 roll-out: September 3rd 2017
 
+
 [Version Specific System Requirements Document](https://s3-eu-west-1.amazonaws.com/ce-sr/CA/Admin/Sys+req/System+requirements+v5.9.pdf){:target="_blank"}
 
 #### New functionalities
