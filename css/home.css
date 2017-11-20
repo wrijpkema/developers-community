@@ -43,7 +43,7 @@ body {
 
 .banner img{
     float:right;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .home-first-line {
@@ -72,7 +72,8 @@ html body div.container div.home-first-line div.text, html body div.container di
 }
 
 a.view-all-products {
-  border: 1px solid #6d6d6d;
+  border: 2px solid #6d6d6d;
+  border-radius: 50px;
   color: #162036;
   display: table;
   font-family: "Roboto Slab",Arial,Helvetica,sans-serif;

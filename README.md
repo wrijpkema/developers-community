@@ -1,6 +1,6 @@
 ## LivePerson Developers' Community
 
-This repository generates LivePerson's Developers' Community, which can be found at https://developers.liveperson.com. This site is generated using Jekyll. If you find an issue with the documentation, site structure, meta or anything else, please open an issue and we'll respond as soon as possible!
+This repository generates LivePerson's Developers' Community, which can be found at https://developers.liveperson.com. The site is generated using Jekyll. If you find an issue with the documentation, site structure, meta or anything else, please open an issue and we'll respond as soon as possible!
 
 ### Licensing 
 

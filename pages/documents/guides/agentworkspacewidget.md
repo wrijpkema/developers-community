@@ -6,7 +6,7 @@ level3: Add Agent Widgets
 
 permalink: guides-agent-workspace-widget.html
 root-link: true
-level-order: 4
+level-order: 3
 order: 1
 indicator: both
 ---

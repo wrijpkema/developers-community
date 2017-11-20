@@ -6,7 +6,7 @@ level3: Customized Chat Windows
 
 permalink: guides-customizedchat.html
 root-link: true
-level-order: 5
+level-order: 3
 order: 1
 indicator: chat
 ---

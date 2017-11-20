@@ -5,7 +5,7 @@ level2: Consumer Experience
 level3: Messaging Window API
 level4: Tutorials
 
-order: 88
+order: 89
 permalink: consumer-int-publishing-images.html
 
 indicator: messaging
