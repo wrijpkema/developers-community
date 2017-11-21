@@ -436,7 +436,7 @@ a.accordion-toggle, a.accordion-collapsed {
 
 .report:hover{
   background-color: #333;
-  color: #fff;
+  color: #fff !important;
 }
 
 .updates{
