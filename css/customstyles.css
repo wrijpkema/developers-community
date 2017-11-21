@@ -434,6 +434,11 @@ a.accordion-toggle, a.accordion-collapsed {
   padding-right: 10px;
 }
 
+.report:hover{
+  background-color: #333;
+  color: #fff;
+}
+
 .updates{
 color: #5879da !important;
 display: block;
