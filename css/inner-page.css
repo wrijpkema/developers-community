@@ -596,8 +596,9 @@ pre {
      position: relative;
      width: 100%;
      overflow: hidden;
-     max-width: 230px;
+     max-width: 175px;
      margin: 0 auto;
+     margin-left: 2px;
    }
 
    /**Position of the iframe inside the reponsive div **/
