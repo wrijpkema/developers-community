@@ -588,3 +588,40 @@ pre {
   text-decoration: none;
 }
 
+/** VisualPing Styling Begin
+   This div contains the iframe and is set to be responsive
+   Edit the max-with to suit your needs
+   **/
+   .visualping-container {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+     max-width: 230px;
+     margin: 0 auto;
+   }
+
+   /**Position of the iframe inside the reponsive div **/
+   .visualping-container iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+   }
+
+   /** hides the ugly borders **/
+   iframe {
+     border: 0;
+   }
+
+
+   @media only screen and (max-width: 767px) {
+
+     /* the div containing the iframe is responsive */
+     .visualping-container {
+       -webkit-box-sizing: inherit;
+       -moz-box-sizing: inherit;
+       box-sizing: inherit;
+       max-width: 95%;
+     }
+   }
