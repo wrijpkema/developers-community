@@ -224,6 +224,7 @@ ul#mysidebar.nav {
   border-right: 1px solid lightgray;
   margin-left: 10px;
   height: 100%;
+  position: initial;
 
 }
 
@@ -596,7 +597,7 @@ pre {
      position: relative;
      width: 100%;
      overflow: hidden;
-     max-width: 175px;
+     max-width: 235px;
      margin: 0 auto;
      margin-left: 2px;
    }
