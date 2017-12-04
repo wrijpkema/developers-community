@@ -25,6 +25,9 @@ google_analytics: UA-96175782-1
 gems:
   - algoliasearch-jekyll
 
+plugins_dir:
+  - jekyll-coffeescript
+
 algolia:
   application_id: "1ITT6KY19C"
   index_name: "dev_BASE"
@@ -75,7 +78,7 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: https://developers.liveperson.com
+url: "https://developers.liveperson.com"
 
 repository: "github.com/EdenKupe/liveperson/"
 
