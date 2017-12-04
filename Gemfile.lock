@@ -172,7 +172,8 @@ DEPENDENCIES
   algoliasearch-jekyll (~> 0.8.0)
   github-pages (~> 106)
   jekyll (~> 3.3.1)
+  jekyll-coffeescript (~> 1.0.1)
   jekyll-feed (~> 0.6)
 
 BUNDLED WITH
-   1.15.1
+   1.16.0

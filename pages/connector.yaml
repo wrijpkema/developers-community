@@ -1,4 +1,8 @@
 ---
+title: Swagger Test
+level1: Documents
+level2: Connector API
+level3: Open API Specification
 layout: swagger
 permalink: connectorapi.html
 swagger: "2.0"

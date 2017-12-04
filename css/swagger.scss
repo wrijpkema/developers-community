@@ -1,5 +1,10 @@
 ---
+# Front matter comment to ensure Jekyll properly reads file.
 ---
+
+$base-font-size: 18px;
+$spacing-unit: 10px;
+$grey-color-light: lightgray;
 
 @mixin swagger-method($color) {
     border: 1px solid $color;
