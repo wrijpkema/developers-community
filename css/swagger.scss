@@ -23,7 +23,7 @@ $grey-color-light: lightgray;
 }
 
 .swagger-path {
-    font-size: $base-font-size +0.3em;
+    font-size: $base-font-size +0.5em;
     margin: 25px 0 10px 0;
     font-family: "Open Sans", Helvetica, sans-serif;
     color: #666666;
@@ -37,7 +37,7 @@ $grey-color-light: lightgray;
 }
 
 .swagger-method-title {
-    font-size: $base-font-size;
+    font-size: $base-font-size +0.2em;
     margin: 0;
     cursor: pointer;
 }
@@ -62,7 +62,7 @@ $grey-color-light: lightgray;
 }
 
 .swagger-method-post {
-    @include swagger-method(#248FB2);
+    @include swagger-method(#228B22);
 }
 
 .swagger-method-put {
