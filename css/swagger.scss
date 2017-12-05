@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-$base-font-size: 18px;
+$base-font-size: 0.8em;
 $spacing-unit: 10px;
 $grey-color-light: lightgray;
 
@@ -23,9 +23,10 @@ $grey-color-light: lightgray;
 }
 
 .swagger-path {
-    font-size: $base-font-size * 1.2;
+    font-size: $base-font-size +0.3em;
     margin: 25px 0 10px 0;
-    font-family: Courier New,Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono, monospace;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #666666;
 }
 
 .swagger-method {
@@ -57,7 +58,7 @@ $grey-color-light: lightgray;
 }
 
 .swagger-method-get {
-    @include swagger-method(#6BBD5B);
+    @include swagger-method(#5879da);
 }
 
 .swagger-method-post {
@@ -65,7 +66,7 @@ $grey-color-light: lightgray;
 }
 
 .swagger-method-put {
-    @include swagger-method(#9B708B);
+    @include swagger-method(#5896ed);
 }
 
 .swagger-method-patch {
@@ -102,7 +103,18 @@ $grey-color-light: lightgray;
     }
 }
 
-.swagger-parameters-table {
+.swagger-parameters-table thead tr th {
+
+  background-color: #162036;
+  font-family: "Open Sans";
+  font-size: 0.8888em;
+  font-weight: bold;
+
+}
+
+
+
+/*.swagger-parameters-table {
     border-spacing: 0px;
     border-collapse: collapse;
     margin-bottom: $spacing-unit;
@@ -117,6 +129,7 @@ $grey-color-light: lightgray;
         background: lighten($grey-color-light, 6%);
     }
 }
+*/
 
 .swagger-parameter-required {
     &:after {
