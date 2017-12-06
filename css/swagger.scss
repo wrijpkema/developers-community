@@ -7,10 +7,11 @@ $spacing-unit: 10px;
 $grey-color-light: lightgray;
 
 @mixin swagger-method($color) {
-    border: 1px solid $color;
+    border: 1px solid lighten($color, 40%);
+    border-radius: 2px;
 
     .swagger-method-title {
-        background: lighten($color, 30%);
+        background: lighten($color, 58%);
     }
 
     .swagger-method-link {
@@ -51,22 +52,23 @@ $grey-color-light: lightgray;
 .swagger-method-name {
     padding: 6px 0;
     display: inline-block;
-    width: 80px;
+    width: 60px;
     text-align: center;
     color: white;
     margin-right: 10px;
 }
 
 .swagger-method-get {
-    @include swagger-method(#5879da);
+    @include swagger-method(#0f6ab4);
 }
 
 .swagger-method-post {
-    @include swagger-method(#228B22);
+    @include swagger-method(#10a54a);
+    border: 1px solid #c3e8d1;
 }
 
 .swagger-method-put {
-    @include swagger-method(#5896ed);
+    @include swagger-method(#c5862b);
 }
 
 .swagger-method-patch {
@@ -74,7 +76,7 @@ $grey-color-light: lightgray;
 }
 
 .swagger-method-delete {
-    @include swagger-method(#E27A7A);
+    @include swagger-method(#a41e22);
 }
 
 .swagger-method-details {
@@ -136,4 +138,8 @@ $grey-color-light: lightgray;
         content: ' *';
         color: red;
     }
+}
+
+.swagger-method-put .swagger-method-title {
+  background-color: #f0e0ca !important;
 }

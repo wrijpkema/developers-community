@@ -80,7 +80,7 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # needed for sitemap.xml file only
 url: "https://developers.liveperson.com"
 
-repository: "github.com/EdenKupe/liveperson/"
+repository: "https://github.com/LivePersonInc/developers-community"
 
 #footer links
 Copyright: "https://www.liveperson.com/policies/copyright"
