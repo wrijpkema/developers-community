@@ -15,7 +15,7 @@ This method retrieves a list of conversations with all their metadata and relate
 
 Method | URL
 ------ | ---------------------------------------------------------------------------------------------------
-POST   | https://{domain}/messaging_history/api/account/{accountID}/conversations/search?offset=0&limit=50
+POST   | https://<domain>/messaging_history/api/account/{accountID}/conversations/search?offset=0&limit=50
 
 **URL Parameters**
 
@@ -45,7 +45,7 @@ Filter is sent in the POST data (body) with the following JSON structure.
 |mcs {from,to}       | Range of Meaningful Connection Score in a particular conversation (including the boundaries). | numeric, numeric                   | Optional | Either "from" or "to" fields are mandatory. In case one of the fields is missing, its value will be set to the minimal or maximal possible values of MCS, respectively.
 |alertedMcsValues    | Alerted MCS of the conversation up until the most recent message.                             | Array `<alertedMCS>`               | Optional | Valid values: "-1", "0", "1"
 |csat {from,to}      | Range of CSAT assigned to the conversation.                                                   | numeric, numeric                   | Optional | Either "from" or "to" fields are mandatory. In case one of the fields is missing, its value will be set to the minimal or maximal possible value of CSAT (1 or 5 respectively).
-|source              | Source origin (Facebook, App etc.) from which the conversation was initially opened.          | Array `<String>`                   | Optional | Possible values: APP, SHARK (WEB), AGENT, SMS, FACEBOOK
+|source              | Source origin (Facebook, App etc.) from which the conversation was initially opened.          | Array `<String>`                   | Optional | Possible values: APP, WEB, AGENT, SMS, FACEBOOK
 |device              | Type of device from which the conversation was initially opened.                              | Array `<String>`                   | Optional | Possible values: DESKTOP, TABLET, MOBILE, NA
 |messageContentTypes | The type of the message                                                                       | Array `<String>`                   | Optional | Valid values: TEXT_PLAIN, TEXT_HTML, LINK, HOSTED_FILE, IMG, SECURE_FORM_INVITATION, SECURE_FORM_SUBMIT, RICH_CONTENT
 |latestConversationQueueState | The queue state of the conversation                                                  | String   | Optional | Valid values: IN_QUEUE,ACTIVE|
@@ -94,7 +94,6 @@ _Conversation record_
 Name                 | Description                                                                    | Type/Value
 :------------------- | :----------------------------------------------------------------------------- | :---------
 info                 | Contains information on the conversation.                                      | container
-campaign             | Campaign data of the messaging interaction.                                    | container
 messagesRecords      | Contains information about a specific message.                                 | container
 messageStatuses      | Contains information about message acceptance status (i.e. read/accept).       | container
 agentParticipants    | Contains information about the agent(s) participating in the conversation.     | container
@@ -133,29 +132,6 @@ latestAgentGroupId   | Group ID of the agent most recently assigned to the conve
 latestAgentGroupName | Group name of the agent most recently assigned to the conversation.        | string     |
 latestQueueState     | Indicates if the conversation is assigned to an agent or waiting in queue. | string     | Valid values: "IN_QUEUE", "ACTIVE"
 isPartial            | Indicates whether the conversation's data is partial.                      | Boolean    | In order to retrieve its full data, use single conversation method (by conversation ID).
-
-_Campaign info_
-
-Name                 | Description                                                                | Type/Value | Notes
-:------------------- | :------------------------------------------------------------------------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------
-| campaignEngagementId |  ID of the campaign's engagement. | numeric | |
-| campaignEngagementName | Name of the campaign's engagement. | alphanumeric (50) | |
-| campaignId | ID of the campaign. | numeric  | |
-| campaignName | Name of the campaign. | alphanumeric (50) | |
-| goalId | ID of the campaign's goal. | numeric | |
-| goalName | Name of the campaign's goal. | alphanumeric (50) | |
-| engagementAgentNote | Note to the Agent defined for the campaign's engagement. | alphanumeric  | |
-| engagementSource | The source of the campaign's engagement e.g. WEB_SITE, SOCIAL_MEDIA, etc. | alphanumeric  | |
-| visitorBehaviorId | ID of the visitor behavior defined for the campaign's engagement. | numeric  | |
-| visitorBehaviorName | Name of the visitor behavior defined for the campaign's engagement. | alphanumeric (50) | |
-| visitorProfileId | ID of the visitor profile defined for the campaign. | numeric | |
-| visitorProfileName | Name of the visitor profile defined for the campaign. | alphanumeric | (50) | |
-| lobId | ID of the line of business of the campaign. | numeric(long) | |
-| lobName | Name of the line of business of the campaign. | alphanumeric | |
-| LocationId | ID of the location of the engagement on the screen. | numeric  | |
-| LocationName | describes the engagement display location. | alphanumeric | The default location is the entire website. |
-| behaviorSystemDefault | Indicates whether visitor behavior is the default one. | Boolean | |
-| profileSystemDefault | Indicates whether visitor behavior is the default one. | Boolean | |
 
 _Message Info_
 

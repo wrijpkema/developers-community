@@ -99,14 +99,3 @@ public enum PermissionType {
   	PHOTO_SHARING
 }  
 ```
-### LPAuthenticationParams
-
-
-```javascript
-
-Public class LPAuthenticationParams{
-  private String mAuthKey;
-  private String mHostAppJWT;
-  private String mHostAppRedirectUri;
-}
-```

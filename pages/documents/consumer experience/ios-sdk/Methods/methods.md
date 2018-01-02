@@ -62,7 +62,7 @@ When using SSO in an authenticated connection, an auth-code is passed to the SDK
 This method reconnects the conversation's connection for conversation query.
 Reconnect open related webSockets and sync the conversation with its latest updates.
 
-`func reconnect(_ conversationQuery: ConversationParamProtocol, authenticationParams: LPAuthenticationParams)`
+`func reconnect(_ conversationQuery: ConversationParamProtocol, authenticationCode: String)`
 
 | Parameter | Description | Notes |
 | :--- | :--- | :--- |
@@ -193,10 +193,10 @@ This method conducts the following:
 
 * Unregisters from the push notification service.
 * Clears all SDK persistent data.
-* Cleans running operations (see [destruct](https://developers.liveperson.com/consumer-experience-ios-sdk-methods.html#destruct)
+* Cleans running operations (see [destruct](https://developers.liveperson.com/consumer-experience-ios-sdk-methods.html#destruct){:target="_blank"}).
 
 `func logout() (Deprecated)`
-*This method was deprecated since SDK version 2.8.0. Use [func logout(completion: @escaping ()->(), failure: @escaping (_ error: Error)->())](https://developers.liveperson.com/consumer-experience-ios-sdk-methods.html#logout) instead*
+*This method was deprecated since SDK version 2.8.0. Use [func logout(completion: @escaping ()->(), failure: @escaping (_ error: Error)->())](https://developers.liveperson.com/consumer-experience-ios-sdk-methods.html#logout){:target="_blank"} instead*
 
 ### destruct
 This method is a destructive method that is typically used to stop and clear all the metadata of the SDK.
@@ -228,7 +228,7 @@ func application(application: UIApplication, didReceiveRemoteNotification userIn
 
 Register to LPMessagingSDK push notifications with the following code in AppDelegate:
 
-*Note: Push notifications must be pre-configured, and an APN certificate has to be uploaded to the LiveEngage platform. See more info on [how to configure push notifications](push-service-overview.html).*
+*Note: Push notifications must be pre-configured, and an APN certificate has to be uploaded to the LiveEngage platform. See more info on [how to configure push notifications](push-service-overview.html){:target="_blank"}.*
 
 `func registerPushNotifications(token: Data, notificationDelegate: LPMessagingSDKNotificationDelegate? = nil, alternateBundleID: String? = nil)`
 
@@ -240,21 +240,10 @@ Register to LPMessagingSDK push notifications with the following code in AppDele
 
 ### getUnreadMessagesCount
 
-When there are unread messages waiting for the consumer within the brand app, this information can be pushed to display in the app’s notification badge. Within the app, brands can develop their own visualization of a badge, such as a number, icon or other marker to show unread messages.
-
-The unread messages number is passed to the SDK through LP Push service with every push.
-
-**IMPORTANT NOTES :**
-
-A push is sent to the last device which was registered to the LP push service, meaning that the unread messages indication can be fetched by only one device.
-
-* If the user is using two devices in parallel, the device that does not receive push events will receive updates of the unread message indicator only once a message has been sent from that device and the push arrives to it.
-
-* In addition, if a conversation is ongoing in web messaging, then the push will not arrive to the device, since the web-socket is already open.
-
-**Getting the unread message badge counter**
-
-This API method uses a threshold mechanism of 10 seconds from the last time the badge retrieved from the server. If calling this method within less than 10 seconds, the counter will be returned from cache. Otherwise, it will be fetched again with new data.
+Getting the unread message badge counter
+There are two options to get this counter:
+1. If the time condition is met we are preforming a REST request to get it from pusher
+2. otherwise, return the cached number we have
 
 `func getUnreadMessagesCount(_ conversationQuery: ConversationParamProtocol, completion: @escaping (_ badgeCounter: Int)->(), failure: @escaping (_ error:NSError)->())`
 

@@ -3,7 +3,7 @@ info:
   title: Agent Messaging API
   version: "1.0.0"
   x-logo:
-    url: 'img/liveperson-inc-logo.jpg'
+    url: 'img/company_logo.png'
   description: |
     # Introduction
     This is documentation of the API capabilites. This api can be consumed currently only via the

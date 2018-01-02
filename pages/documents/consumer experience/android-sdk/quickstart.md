@@ -256,11 +256,8 @@ public interface ConversationFragmentCallbacks {
       // IFeedbackActions actions - provides set of actions for the feedback screen.
     void onSurveySubmitted(IFeedbackActions actions);
 
-    void setSecureFormMode(boolean on, String formTitle) {}
-
+      // IFeedbackActions actions - provides set of actions for the feedback screen.
 }
-
-// IFeedbackActions actions - provides set of actions for the feedback screen.
 public interface IFeedbackActions {
 
     void closeFeedBackScreen();
