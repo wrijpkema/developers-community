@@ -1450,7 +1450,7 @@ Note: this parameter will be extended to 60sec when in VoiceOver mode.</td>
     <td align="left">remoteUserDefaultAvatarImage</td>
     <td align="left">UIImage?</td>
     <td align="left">Default Avatar image of the remote user. When assigned, this image will disable remoteUserAvatarBackgroundColor and remoteUserAvatarIconColor configurations.  If remote user has an avatar image in his profile, this attribute will be ignored.</td>
-    <td align="left"><img src="img/remoteUserDefaultAvatarImage.png"</td>
+    <td align="left"><img src="img/remoteUserDefaultAvatarImage.png" /></td>
     <td align="left">nil</td>
   </tr>
   <tr>
@@ -1806,7 +1806,7 @@ Note: this parameter will be extended to 60sec when in VoiceOver mode.</td>
     <td align="left">controllerBubbleTextColor</td>
     <td align="left">UIColor</td>
     <td align="left">Color code for the text of the controller bubble.</td>
-    <td align="left"><img alt="controller bubble text color"></td>
+    <td align="left"><img src="img/controllerbubbletextcolor.png" alt="controller bubble text color"></td>
     <td align="left">#5b5c5e</td>
   </tr>
 </tbody>
