@@ -1,4 +1,10 @@
-swagger: '2.0'
+---
+title: Messaging Window
+level1: Documents
+level2: Messaging Window API Swagger
+level3: Open API Specification For Window
+layout: swagger
+permalink: messagingswagger.html
 info:
   title: Agent Messaging API
   version: "1.0.0"
@@ -414,3 +420,4 @@ paths:
           description: Success
           schema:
             $ref: ../infra/stringRespBody.json
+---
