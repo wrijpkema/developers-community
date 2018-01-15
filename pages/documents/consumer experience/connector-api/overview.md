@@ -1,8 +1,8 @@
 ---
 title: Swagger Overview
 level1: Documents
-level2: Connector API
-level3: Open API Specification
+level2: Consumer Experience
+level3: Connector API
 order: 1
 level-order: 8
 root-link: true

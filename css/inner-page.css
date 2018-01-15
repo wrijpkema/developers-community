@@ -294,10 +294,10 @@ div.sidebarTitle {
   margin-bottom: 9px;
   margin-left: 26px;
   width: 270px;
-  top: 123px;
-  font-family:  "Roboto", "Open Sans", Helvetica, sans-serif;
-  white-space:nowrap;
-  visibility: hidden;
+  top: 68px;
+  font-family: "Roboto", "Open Sans", Helvetica, sans-serif;
+  white-space: nowrap;
+  position: relative;
 }
 
 div.sidebarTitle span{
