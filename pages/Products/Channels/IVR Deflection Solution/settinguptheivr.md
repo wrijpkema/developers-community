@@ -4,7 +4,7 @@ level1: Solutions
 level2: Channels
 level3: IVR Deflection
 order: 30
-permalink: products-ivr-chat.html
+permalink: products-ivr-chat-setup.html
 indicator: chat
 ---
 
