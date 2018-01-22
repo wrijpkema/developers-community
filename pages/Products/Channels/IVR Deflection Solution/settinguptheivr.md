@@ -1,13 +1,11 @@
 ---
-title: Setting up the IVR Deflection Solution
+title: Setting up the IVR Deflection for Chat
 level1: Solutions
 level2: Channels
-level3: IVR Deflection Solution for Chat
-
-order: 2
-
-permalink: products-channels-ivr-deflection-solution-setting-up-ivr.html
-indicator:
+level3: IVR Deflection
+order: 30
+permalink: products-ivr-chat.html
+indicator: chat
 ---
 
 To start using the **IVR Deflection Solution for Chat**, set up a LiveEngage campaign with IVR engagement following the key steps listed below:
@@ -75,3 +73,61 @@ users.
 | User             | Impact                                                                                                                                                                                                                                                |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Campaign Manager | The Visits KPI (which is found in the Campaign Manager Data Bar and is used to track website visitors) will not track the voice callers who called the IVR. Instead, it will begin tracking visitors who clicked on the link embedded within the SMS. |
+
+
+### SMS Vendors Code Examples
+
+The following are VXML examples of sending text messages using leading SMS gateway vendors. The VXML code should be deployed in the appropriate IVR decision tree location (scenario).
+
+**Sample flow**:
+
+1. Prompt caller for phone number.
+
+2. Retrieve phone number.
+
+3. Thank caller.
+
+4. Send request to the SMS gateway.
+
+5. Disconnect.
+
+
+### clickatell.com
+
+```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<vxml version = "2.1">
+	<form>
+	<var name="msg" expr="'Please click this URL to chat with an agent http://bit.ly/1FqRKyT'"
+	<field name="user" type="digits">
+	<audio src="http://s3.amazonaws.com/lpivr/voice/presspound.mp3" fetchhint="prefetch"
+	<filled>
+	<audio src="http://s3.amazonaws.com/lpivr/voice/thank+you+after+pressed+1.mp3" fetchhint="prefetch"
+	<data ecmaxmltype="e4x" name="SendSMS" srcexpr="'http://api.clickatell.com/http/sendmsg?user=hblutrich&amp;password=<password>&amp;api\_id=<id>&amp;to=' + encodeURIComponent(user) + '&amp;text=' + encodeURIComponent(msg)"
+	</filled>
+	</field>
+	</form>
+	</vxml>
+```
+
+### Voxeo
+
+```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<vxml version = "2.1">
+	<form>
+	<var name="botkey" expr="<key>"
+	<var name="apimethod" expr="'send'"
+	<var name="msg" expr="'Please click this URL to chat with an agent http://bit.ly/1IAVehP'"
+	<var name="network" expr="'SMS'"
+	<var name="from" expr="3477733852"
+	<field name="user" type="digits">
+	<audio src="http://s3.amazonaws.com/lpivr/voice/presspound.mp3" fetchhint="prefetch"
+	<filled>
+	<audio src="http://s3.amazonaws.com/lpivr/voice/thank+you+after+pressed+1.mp3" fetchhint="prefetch"
+	<data name="SendSMS" srcexpr="'http://<user>:<password>@api.messaging.staging.voxeo.net/1.0/messaging?botkey=' + encodeURIComponent(botkey)+ '&amp;apimethod=' + encodeURIComponent(apimethod) + '&amp;msg=' + encodeURIComponent(msg) + '&amp;user=' + encodeURIComponent(user) + '&amp;network=' + encodeURIComponent(network) + '&amp;from=' + encodeURIComponent(from)"
+	</filled>
+	</field>
+	</form>
+	</vxml>
+```

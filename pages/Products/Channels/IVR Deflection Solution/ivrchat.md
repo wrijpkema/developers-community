@@ -1,14 +1,11 @@
 ---
-title: Introduction
+title: IVR Deflection for Chat
 level1: Solutions
 level2: Channels
-level3: IVR Deflection Solution for Chat
-
-order: 1
-level-order: 2
-root-link: true
-permalink: products-channels-ivr-deflection-solution-introduction.html
-indicator:
+level3: IVR Deflection
+order: 20
+permalink: products-ivr-chat.html
+indicator: chat
 ---
 ### How the IVR Deflection Solution Works
 

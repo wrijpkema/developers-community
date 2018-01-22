@@ -1,12 +1,13 @@
 ---
-title: IVR Deflection
+title: IVR Deflection for Messaging
 level1: Solutions
 level2: Channels
-level3: SMS with LiveEngage
-
-permalink: products-channels-sms-ivr.html
+level3: IVR Deflection
+level-order: 2
+root-link: true
+permalink: products-ivr-messaging.html
 order: 10
-indicator:
+indicator: messaging
 ---
 
 ### Overview
