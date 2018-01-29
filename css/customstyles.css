@@ -1411,6 +1411,20 @@ only screen and (                min-resolution: 2dppx) {
 	padding-bottom:40px;
 }
 
+.videocontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.videorow {
+  display: flex;
+}
+
+.summitvideo {
+  flex: 1;
+  margin-right: 20px;
+}
+
 .developmentsummit h1{
 	color:#ffffff;
 	font-size:48px;
