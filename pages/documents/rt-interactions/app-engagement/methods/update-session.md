@@ -35,7 +35,7 @@ Use this method to update the session and add SDEs.
 
 **Body parameters**
 
-| pageId | 
+| pageId |
 
 **Body entity example**
 
@@ -75,7 +75,7 @@ https://domainToLiveperson/api/account/{accountId}/app/engagement/visitor/{visit
 
 **Response Codes**
 
-| Code | Response | 
+| Code | Response |
 | :--- | :--- |
 | 200 | OK |
 | 400 | Validation error |
@@ -100,14 +100,12 @@ Error Response entity:
       "message" : String [Optional]
       "internalCode" : Integer
     }
-    
-    
+
+
 Example:
-  
+
     {
                  "time":1469543282471,
                  "message":"Illegal Version",
                  "internalCode":33
     }
-
-
