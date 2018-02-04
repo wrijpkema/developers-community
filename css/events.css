@@ -196,6 +196,7 @@ a.view-all-products::after{
   font-family: "Roboto";
   font-size: 24px;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .videotitlewide {
@@ -310,7 +311,6 @@ only screen and (                min-resolution: 2dppx) {
   margin-bottom: 10px;
   font-size: 1.8em;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .bottom-pane {
@@ -335,27 +335,51 @@ only screen and (                min-resolution: 2dppx) {
   text-align: left;
 }
 
-.reading {
-  margin-top: 40px;
-  font-size: 1.4em;
-  display: inline-block;
+.thumbnailrow {
+  display: flex;
 }
 
-.newyork {
-  float: left;
-  font-size: 1.4em;
-  margin-top: 40px;
+.thumbnailimage {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  padding: 4px;
+  flex: 1;
 }
 
-.melbourne {
-  float: right;
-  font-size: 1.4em;
-  margin-top: 40px;
-  display: inline-block;
+.thumbnailimage img {
+  width: 510px;
+  height: 270px;
+  margin-left: 70px;
 }
 
-.satellite {
-  font-weight: bold;
+.thumbnailtext {
+  margin-left: 88px;
+}
+
+.thumbnailtitle {
+    font-size: 1.575em;
+    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
+    width: 75%;
+    display: inline-block;
+    margin-top: 95px;
+    color: #142036;
+}
+
+.learnmore{
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.2em;
+  width: 182px;
+  padding: 10px 40px 10px 40px;
+  font-family: "Open Sans",Arial, Helvetica, sans-serif;
+  border: 2px solid #a1a1a1;
+}
+
+.ds-dropdown-menu {
+  right: -105px !important;
+  left: auto !important;
 }
 
 /* End development summit page */
