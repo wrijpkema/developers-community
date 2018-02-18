@@ -13,3 +13,5 @@ indicator: both
 ### Preface
 
 I can write textual content here and it will appear above the API reference.
+
+### API Reference
