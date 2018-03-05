@@ -19,7 +19,9 @@ body {
 }
 
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
+  font-family: "Roboto",Arial,Helvetica,sans-serif !important;
+  font-size: 16px !important;
 }
 
 small {
@@ -31,15 +33,20 @@ pre {
   font-size: 16px !important;
   font-weight: inherit !important;
   margin: 20px 0!important;
-  color: #000000!important;
-  font-family: "Roboto Slab",Arial,Helvetica,sans-serif!important;
+  color: #fff!important;
+  font-family: "Roboto Slab",Arial,Helvetica,sans-serif !important;
   padding: 0 0 0 0!important;
   background-color: none !important;
 }
 
 pre.version {
-  border-radius: 50%;
-  background: #162036;
-  font-size: 10px;
-  padding: 5px;
+  border-radius: 50% !important;
+  background: #162036 !important;
+  font-size: 10px !important;
+  padding: 5px !important;
+}
+
+pre.base-url {
+  background: none;
+  color: #000000 !important;
 }
