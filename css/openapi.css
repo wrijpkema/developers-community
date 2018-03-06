@@ -110,6 +110,10 @@ pre.example.microlight {
   margin-bottom: 10px;
 }
 
+.swagger-ui .response-col_description__inner div.markdown {
+  background: none;
+}
+
 .markdown {
   color: #000000;
   padding: 0 0 0 5px;
@@ -123,10 +127,10 @@ a.nostyle {
   font-style: normal;
 }
 
-.prop-type {
-  color: #5879DA !important;
+.swagger-ui .model-box {
+  background: #162036;
 }
 
-.prop > span {
-  color: #fff !important;
+.prop-type {
+  color: #5879DA !important;
 }
