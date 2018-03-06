@@ -14,14 +14,30 @@ body {
   background: #fafafa;
 }
 
+.wrapper {
+  padding: 0 !important;
+}
+
 .topbar {
   display:none;
 }
 
 .title {
-  margin-bottom: 30px !important;
   font-family: "Roboto",Arial,Helvetica,sans-serif !important;
-  font-size: 16px !important;
+  font-size: 20px !important;
+}
+
+.scheme-container {
+  display: none;
+}
+
+.swagger-ui .opblock .opblock-summary {
+  padding: 0 !important;
+}
+
+
+.swagger-ui .opblock .opblock-summary-method {
+  border-radius: 0 !important;
 }
 
 small {
@@ -30,9 +46,7 @@ small {
 }
 
 pre {
-  font-size: 16px !important;
   font-weight: inherit !important;
-  margin: 20px 0!important;
   color: #fff!important;
   font-family: "Roboto Slab",Arial,Helvetica,sans-serif !important;
   padding: 0 0 0 0!important;
@@ -47,6 +61,72 @@ pre.version {
 }
 
 pre.base-url {
+  font-size: 14px;
   background: none;
   color: #000000 !important;
+}
+
+.swagger-ui .opblock .opblock-summary-description {
+  text-align: right;
+}
+
+.swagger-ui .opblock-tag {
+  padding: 0 0 0 0;
+}
+
+.swagger-ui .opblock .opblock-section-header h4 {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.swagger-ui table thead tr th {
+  color: #ffffff !important;
+  font-family: "Roboto",Arial !important ;
+  background-color: #162036;
+}
+
+th.col.col_header.parameters-col_name {
+  width: 30%;
+  padding-left: 5px;
+}
+
+th.col.col_header.parameters-col_description {
+  padding-left: 5px;
+}
+
+.swagger-ui table tbody tr td:first-of-type {
+  padding-left: 5px;
+}
+
+.swagger-ui table tbody tr td {
+  border-left: 1px solid #d6d6d6;
+}
+
+.swagger-ui .response-col_description__inner div.markdown p, .swagger-ui .response-col_description__inner div.renderedMarkdown p {
+  color: #000000 !important;
+}
+
+pre.example.microlight {
+  margin-bottom: 10px;
+}
+
+.markdown {
+  color: #000000;
+  padding: 0 0 0 5px;
+}
+
+td.col.response-col_status {
+  font-weight: bold;
+}
+
+a.nostyle {
+  font-style: normal;
+}
+
+.prop-type {
+  color: #5879DA !important;
+}
+
+.prop > span {
+  color: #fff !important;
 }
