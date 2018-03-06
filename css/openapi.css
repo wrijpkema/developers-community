@@ -72,6 +72,13 @@ pre.base-url {
 
 .swagger-ui .opblock-tag {
   padding: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.swagger-ui .opblock-tag small {
+  margin-left: -60px;
+  padding: 0;
 }
 
 .swagger-ui .opblock .opblock-section-header h4 {
@@ -121,6 +128,11 @@ pre.example.microlight {
 
 td.col.response-col_status {
   font-weight: bold;
+}
+
+.opblock-tag a.nostyle {
+  margin-bottom: 10px;
+  align-self: flex-start;
 }
 
 a.nostyle {
