@@ -15,7 +15,7 @@
     "/send/account/{brandId}/conversation" : {
       "post" : {
         "tags" : [ "LP-SendAPI" ],
-        "summary" : "This is our 'batch'-endpoint. ",
+        "summary" : "This is our 'batch'-endpoint ",
         "description" : "It takes an array of at least two request payloads. The order of the array items is important. First, the setConsumerProfile payload, second the createConversation and payload, and optionally last a publishMessage payload. Returns an array of corresponding responses. \n Due to race conditions inside the UMS, we cannot 100% reliably assure that the conversation is valid IMMEDIATELY. However, we take measures (i.e. active waiting) to minimize the risk. Since it is an UMS-internal issue, the problem will not be solved until UMS v4.x",
         "operationId" : "createConversationBatchPOST",
         "parameters" : [ {
@@ -79,7 +79,7 @@
     "/send/account/{brandId}/conversation/{convId}/close" : {
       "post" : {
         "tags" : [ "LP-SendAPI" ],
-        "summary" : "Closes a conversation with given conversation ID",
+        "summary" : "Closes a conversation with given conversation ID.",
         "description" : "",
         "operationId" : "closeConversationPOST",
         "parameters" : [ {
@@ -133,7 +133,7 @@
     "/send/account/{brandId}/conversation/{convId}/send" : {
       "post" : {
         "tags" : [ "LP-SendAPI" ],
-        "summary" : "Takes a \"raw\" JSON-payload and puts it on the UMS.",
+        "summary" : "Takes a \"raw\" JSON-payload and puts it on the UMS",
         "description" : "The order of events is important. You call this payload the same order as you would send your messages over the WebSocket connection! For the payload specification, please review the Messaging Window API found elsewhere in the community.",
         "operationId" : "sendRawPOST",
         "parameters" : [ {
