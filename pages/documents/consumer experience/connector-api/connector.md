@@ -1,12 +1,11 @@
 ---
-title: Swagger Test
+title: Connector API Reference
 level1: Documents
 level2: Consumer Experience
 level3: Connector API
 layout: swagger
 permalink: connectorapireference.html
 order: 10
-data: connector
 indicator: both
 ---
 
