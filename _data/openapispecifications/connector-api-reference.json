@@ -16,7 +16,7 @@
       "post" : {
         "tags" : [ "LP-SendAPI" ],
         "summary" : "This is our 'batch'-endpoint ",
-        "description" : "It takes an array of at least two request payloads. The order of the array items is important. First, the setConsumerProfile payload, second the createConversation and payload, and optionally last a publishMessage payload. Returns an array of corresponding responses. \n Due to race conditions inside the UMS, we cannot 100% reliably assure that the conversation is valid IMMEDIATELY. However, we take measures (i.e. active waiting) to minimize the risk. Since it is an UMS-internal issue, the problem will not be solved until UMS v4.x",
+        "description" : "This call takes an array of at least two request payloads. The order of the array items is important. First, the setConsumerProfile payload, second the createConversation payload, and optionally last a publishMessage payload. Returns an array of corresponding responses. \n \n Due to race conditions inside the UMS, we cannot 100% reliably assure that the conversation is valid IMMEDIATELY. However, we take measures (i.e. active waiting) to minimize the risk. Since it is an UMS-internal issue, the problem will not be solved until a future version of the UMS",
         "operationId" : "createConversationBatchPOST",
         "parameters" : [ {
           "name" : "brandId",

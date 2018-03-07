@@ -167,3 +167,17 @@ a.nostyle {
   margin-right: 5px;
   font-style: italic;
 }
+
+.swagger-ui .opblock .opblock-summary-method {
+  font-weight: 200;
+  font-family: "Roboto",Arial !important ;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-summary-method {
+  background: #10a54a;
+}
+
+.swagger-ui .opblock.opblock-post {
+  background-color: #e7f6ec;
+  border: 1px solid #c3e8d1;
+}
