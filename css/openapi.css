@@ -181,3 +181,30 @@ a.nostyle {
   background-color: #e7f6ec;
   border: 1px solid #c3e8d1;
 }
+
+.swagger-ui .opblock.opblock-get .opblock-summary-method {
+  background: #0f6ab4;
+}
+
+.swagger-ui .opblock.opblock-get {
+  background-color: #e7f0f7;
+  border: 1px solid #c3d9ec;
+}
+
+.swagger-ui .opblock.opblock-delete .opblock-summary-method {
+  background: #a41e22;
+}
+
+.swagger-ui .opblock.opblock-delete {
+  background-color: #f5e8e8;
+  border: 1px solid #e8c6c7;
+}
+
+.swagger-ui .opblock.opblock-put .opblock-summary-method {
+  background: #c5862b;
+}
+
+.swagger-ui .opblock.opblock-put {
+  background-color: #f9f2e9;
+  border: 1px solid #f0e0ca;
+}
