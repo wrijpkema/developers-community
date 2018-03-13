@@ -14,5 +14,3 @@ indicator: both
 I can write textual content here and it will appear above the API reference.
 
 ### API Reference
-
-{% include connector-api-reference.json %}

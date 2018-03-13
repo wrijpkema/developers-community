@@ -73,13 +73,13 @@ pre.base-url {
 .swagger-ui .opblock-tag {
   padding: 0 0 0 0;
   display: flex;
-  flex-direction: column;
   font-family: "Roboto",Arial !important ;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  margin-top: -49px;
 }
 
 .swagger-ui .opblock-tag small {
-  margin-left: -60px;
+  margin-left: -6px;
   padding: 0;
 }
 
@@ -135,6 +135,7 @@ td.col.response-col_status {
 .opblock-tag a.nostyle {
   margin-bottom: 10px;
   align-self: flex-start;
+  display: none;
 }
 
 a.nostyle {
@@ -154,7 +155,8 @@ a.nostyle {
 }
 
 .expand-operation {
-  display: none;
+  align-self: flex-end;
+  margin-bottom: 8px;
 }
 
 .opblock-summary-path {
