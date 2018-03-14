@@ -1,5 +1,5 @@
 ---
-title: Swagger Overview
+title: Overview
 level1: Documents
 level2: Consumer Experience
 level3: Connector API
@@ -9,6 +9,13 @@ root-link: true
 indicator: both
 permalink: connectorapioverview.html
 ---
-### Testing
 
-Testing the overview layout and position in conjunction with the YAML file.
+### Connector API
+
+An overview of the Connector API.
+
+### Use Cases
+
+Examples of use cases for the API.
+
+### Best Practices

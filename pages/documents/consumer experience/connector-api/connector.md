@@ -11,6 +11,6 @@ indicator: both
 
 ### Preface
 
-I can write textual content here and it will appear above the API reference.
+Anything we want to write above the API refernece, notes, overview, etc.
 
 ### API Reference
