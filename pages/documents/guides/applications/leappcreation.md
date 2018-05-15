@@ -17,7 +17,7 @@ Once the application has been installed, the LivePerson resource will send you y
 
 **Note**: the Connector API is the only use case for LiveEngage Applications at the moment but we are planning to develop and launch more LiveEngage Applications related use cases in the future.
 
-### LiveEngage Application Manifest Schema
+### LiveEngage Application Manifest Schema - Example Using the Connector API
 
 ```json
 {
@@ -111,6 +111,10 @@ Once the application has been installed, the LivePerson resource will send you y
 |scope | space-separated list of scope values that the client can use when requesting access tokens| string| No|max length: 128. Requires the value: "msg.consumer"|
 |logo_uri | URL string that references a logo for the client | string| No|max length: 128|
 |capabilities| LiveEngage capabilities implemented by this app. This field will be used by other apps to discover this app based on the implemented capabilities.| Object. (Contains the properties webhooks and engagement)| No| Ref-Webhooks: Contains the endpoints where UMS will send notifications <br /> Ref-engagement: The app is capable of engaging the consumer based on LiveEngage engagements API|
+
+### Capabilities
+
+These are examples of two objects appearing under the "capability" key. These objects define abilities and behaviors which LiveEngage should enable for the app.
 
 #### The Webhooks array
 
