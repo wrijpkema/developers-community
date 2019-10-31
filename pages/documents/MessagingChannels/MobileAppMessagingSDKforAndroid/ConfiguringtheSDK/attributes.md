@@ -1,5 +1,5 @@
 ---
-pagename: Attributes
+pagename: SDK 5.0 and above
 redirect_from:
   - android-attributes.html
   - mobile-app-messaging-sdk-for-android-customization-and-branding-attributes.html
@@ -10,7 +10,7 @@ documentname: Mobile App Messaging SDK for Android
 subfoldername: SDK Attributes
 
 order: 160
-permalink: mobile-app-messaging-sdk-for-android-sdk-attributes-attributes.html
+permalink: mobile-app-messaging-sdk-for-android-sdk-attributes-5-0-and-above.html
 
 indicator: messaging
 ---
@@ -19,14 +19,14 @@ The goal of the following document is to enumerate the different fields controll
 {:.important}
 For things like Brand name, which is a string, refer to [string Localization](android-modifying-string.html).
 
---- 
+---
 
 #### What does this mean for our customers who use our default Attribute configurations?
 
 If you are currently using our default attribute configurations, do a quick check below to see if the default value has changed. It is likely that only existing colors have been updated and new color attribute configurations are added. You must support Dark Theme for Android 10 and you can use default color configurations or you can customize them, as we have handled the support for you by updating the SDK color scheme where possible. This appearance is different than the previous implementation but is intended to be more in line with what Android users expect. We have worked hard on its implementation and hope you enjoy it!
- 
 
-#### What this means for consumers on Android 9 and below? 
+
+#### What this means for consumers on Android 9 and below?
 
 Light theme works as usual as before but there is no support for dark theme.
 
@@ -45,9 +45,9 @@ Light theme works as usual as before but there is no support for dark theme.
 | lp_colorOnBackground2 | #5b5c5e | #5b5c5e |
 | lp_colorSurface | #f5f5f5 | #272727 |
 | lp_colorOnSurface | #000000 | #FFFFFF |
-| lp_agent_message_bubble_color | #D6D6D6 | #3B3B3B | 
-| lp_onAgentMessage_bubble_color | #000000 | #DEDEDE | 
-| lp_consumer_message_bubble_color | #004dc9 | #448AFF | 
+| lp_agent_message_bubble_color | #D6D6D6 | #3B3B3B |
+| lp_onAgentMessage_bubble_color | #000000 | #DEDEDE |
+| lp_consumer_message_bubble_color | #004dc9 | #448AFF |
 | lp_onConsumerMessage_bubble_color | #FFFFFF| #DEDEDE |
 | lp_colorSecondary | #f5f5f5 | #272727 |
 | lp_colorOnSecondary | #000000 | #FFFFFF |
@@ -61,7 +61,7 @@ Light theme works as usual as before but there is no support for dark theme.
 | lp_feedback_option_selectedColor | #229a49 | #30d158 |
 | lp_disabledColor | #b7b8b9 | #46474a |
 
---- 
+---
 
 
 ### Accessibility
@@ -82,23 +82,23 @@ Announce when the agent is typing. This is applicable only in Activity mode.
 * **Default value:** true
 
 
---- 
+---
 
 
 ### Agent Assignment
 
 #### send_agent_profile_updates_when_conversation_closed
-When set to **true** the callback [LivePersonCallback](lp_messaging_ui_brand_logo) `onAgentDetailsChanged` calls with the agent detail updates even if the last conversation is closed. In this case, it provides the assigned agent of the last conversation. If **false**, this callback is only called when the current conversation is active. 
+When set to **true** the callback [LivePersonCallback](lp_messaging_ui_brand_logo) `onAgentDetailsChanged` calls with the agent detail updates even if the last conversation is closed. In this case, it provides the assigned agent of the last conversation. If **false**, this callback is only called when the current conversation is active.
 
 * **Type:** bool  
-* **Default value:** true 
+* **Default value:** true
 
---- 
+---
 
 ### Audio Messaging
 
 #### enable_voice_sharing
-Enable or disable the audio messaging feature. 
+Enable or disable the audio messaging feature.
 
 * **Type:** bool  
 * **Default value:** false
@@ -122,7 +122,7 @@ Maximum number of voice files stored on the device.
 
 #### avatar_margin_leading
 Defines the remote avatar leading spacing (from the left edge to the avatar).
- 
+
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
       <li><b>Type:</b> dimen</li>
@@ -145,7 +145,7 @@ Defines the remote avatar leading spacing (from the left edge to the avatar).
 
 #### avatar_margin_trailing
 Defines the remote avatar Trailing spacing (from the avatar to the bubble).
- 
+
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
       <li><b>Type:</b> dimen</li>
@@ -275,9 +275,9 @@ Color code for links in the text of the brand bubble.
 <div style="width: 85%;padding: 5px;">
 &nbsp;
 </div>
-    
-    
-    
+
+
+
 #### brand_bubble_timestamp_text_color
 Color code for the timestamp of the brand bubble.
 
@@ -574,7 +574,7 @@ Color code for the text of the automatic messages.
 #### lp_colorPrimary
 Define the primary color of the activity.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** android:colorPrimary
 
 
@@ -582,7 +582,7 @@ Define the primary color of the activity.
 #### lp_colorPrimaryDark
 Define the primary dark color of the activity.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** android:colorPrimaryDark
 
 
@@ -609,85 +609,85 @@ Define the color of menu button and back arrow on toolbar.
 </div>
 
 #### conversation_toolbar_color
-Define the toolbar color of conversation screen. 
+Define the toolbar color of conversation screen.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorPrimary
 
 
 #### conversation_toolbar_isTyping_color
 Define the color of agent typing indicator on conversation toolbar.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** #9B9B9B
 
 
 #### feedback_toolbar_background
 Define the toolbar color of feedback screen.
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorPrimary
 
 
 #### feedback_toolbar_textColor
 Define the text color on feedback toolbar.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorOnPrimary
 
 
 #### captionPreview_toolbar_textColor
 Define the text color on caption preview toolbar.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorOnPrimary
 
 
 #### captionPreview_toolbar_background
 Define the tool bar color of caption preview screen.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorPrimary
 
 
 #### pci_form_toolbar_background
 Define the toolbar color of PCI form screen.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorPrimary
 
 
 #### pci_form_toolbar_textColor
 Define the text color on PCI form toolbar.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorOnPrimary
 
 
 #### lp_menu_item_background
 Define the background color of toolbar menu.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorPrimary
 
 
 #### lp_menu_item_enabled_textColor
 Define the menu item color when enabled.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_colorOnPrimary
 
 
 #### lp_menu_item_disabled_textColor
 Define the menu item color when disabled.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_disabledColor
 
 
 #### clear_history_menu_item_visible
 Define the visibility of clear history menu item.
 
-* **Type:** bool 
+* **Type:** bool
 * **Default value:** true
 
 ---  
@@ -695,7 +695,7 @@ Define the visibility of clear history menu item.
 ### Conversations
 
 #### conversation_background (color)
-Define the color code for the entire view background. 
+Define the color code for the entire view background.
 
 In activity mode - Also the color of android:windowBackground.
 
@@ -866,7 +866,7 @@ Defines whether to enable or disable client side only masking. False by default.
 
 
 #### enable_real_time_masking
-Defines whether to enable or disable real time masking. 
+Defines whether to enable or disable real time masking.
 
 * **Type:** bool
 * **Default value:** false
@@ -912,7 +912,7 @@ The character used to mask the real time message.
 
 ---  
 
-### Date and Time 
+### Date and Time
 
 #### lp_date_format
 Define date format.
@@ -1142,7 +1142,7 @@ Defines the Resolved system message line spacing.
 &nbsp;
 </div>
 
- 
+
 
 #### bubble_system_resolved_separator_padding_bottom
 Defines the Resolved system message Separator padding.
@@ -1190,11 +1190,11 @@ Defines the Progress bar image. If empty, the default Progress bar appears.
 #### lp_progress_bar_image_color
 Defines the color of default progress bar image.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_progress_bar_color
 
 
-#### lpmessaging_ui_image_progress_bar.xml	
+#### lpmessaging_ui_image_progress_bar.xml
 Default progress bar vector drawable for downloading or uploading an image. It appears on the image, inside the bubble, until progress is done. To Override this resource, create a vector drawable under the android drawable folder with the same resource name.
 
 
@@ -1204,7 +1204,7 @@ Default progress bar vector drawable for downloading or uploading an image. It a
 
 #### message_receive_icons
 For each message, there are three indicators available: Message sent, Message received, and Message read.
-  
+
 You can customize the indicators according to your needs, by using a number between 1 and 3.
 
 **Type:** integer
@@ -1232,12 +1232,12 @@ You can customize the indicators according to your needs, by using a number betw
 
 
 #### message_receive_text
-If you set the resource [message_receive_icons](#message_receive_icons) to **0**, you can specify what texts appear for each state. 
+If you set the resource [message_receive_icons](#message_receive_icons) to **0**, you can specify what texts appear for each state.
 
 **Type:** string-array
 
 <div style="float: left; width: 50%;height: 220px;">
-   You must have 4 items, in the following order: 
+   You must have 4 items, in the following order:
    <ul>
       <li><b>1st item:</b> message sent</li>
       <li><b>2nd item:</b> message delivered</li>
@@ -1260,7 +1260,7 @@ If you set the resource [message_receive_icons](#message_receive_icons) to **0**
 
 
 #### clear_history_show_confirm_dialog
-Define if to show confirm dialog before clearing history or not. 
+Define if to show confirm dialog before clearing history or not.
 
 * **Type:** bool
 * **Default value:** true
@@ -1319,7 +1319,7 @@ Defines the encryption version to use. Currently available version 1 only.
 
 
 #### csds_url
-For vanity URL purposes. 
+For vanity URL purposes.
 
 * **Type:** string
 * **Default value:** adminlogin.liveperson.net
@@ -1328,17 +1328,17 @@ For vanity URL purposes.
 #### idp_num_history_conversation
 Defines the number of recent conversations (including messages) to fetch from the server when loading more conversations. Only for authenticated account.
 
-* **Type:** integer 
+* **Type:** integer
 * **Default value:** 2
 
 #### lp_bubble_phone_links_regex
-Defines the java regex for phone links in bubble messages. 
+Defines the java regex for phone links in bubble messages.
 
 * **Type:** string
 * **Default value:** No value
 
 #### lp_bubble_url_links_regex
-Defines the java regex for url links in bubble messages. 
+Defines the java regex for url links in bubble messages.
 
 * **Type:** string
 * **Default value:** No value
@@ -1726,7 +1726,7 @@ Defines the color of close icon on enter message view.
 ### Navigation -  Scroll down indicator
 
 #### scroll_down_indicator_enabled
-Enable or disable the scroll down indicator (shown or invisible). 
+Enable or disable the scroll down indicator (shown or invisible).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -1746,7 +1746,7 @@ Enable or disable the scroll down indicator (shown or invisible).
 &nbsp;
 </div>
 
- 
+
 #### scroll_down_indicator_unread_summary_enabled
 Enable or disable the summary in scroll down indicator (shown or invisible). If [unread_indicator_bubble_enable](#unread_indicator_bubble_enable) is **false**, it's in minimized mode without a badge indicating number of unread message.  Tapping scrolls to the last message.
 
@@ -1982,16 +1982,16 @@ Corner radius of the unread messages counter inside the scroll down indicator.
 
 
 #### enable_photo_sharing
-Enable or disable the photo sharing feature. 
+Enable or disable the photo sharing feature.
 
-* **Type:** bool 
+* **Type:** bool
 * **Default value:** false
 
 
 #### max_number_stored_images
 Define the max number of images that will be stored locally.
 
-* **Type:** integer 
+* **Type:** integer
 * **Default value:** 20
 
 
@@ -2113,7 +2113,7 @@ Define the items’ icon color in the attachment menu.
 </div>
 
 #### lp_attachment_menu_background_color
-Define the color of attachment menu background 
+Define the color of attachment menu background
 
 * **Type:** color
 * **Default value:** @color/lp_colorSurface
@@ -2126,37 +2126,37 @@ Define the color of attachment menu background
 #### lpui_quick_reply_button_vertical_padding
 Quick Replies button padding above and below the button text.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 12dp
 
 #### lpui_quick_reply_button_horizontal_padding
 Quick Replies button padding on right and left of button text.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 12dp
 
 #### lpui_quick_reply_button_vertical_margin
 Quick Replies button margin below.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 12dp
 
 #### lpui_quick_reply_button_horizontal_margin
 Quick Replies button margin to the right.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 8dp
 
 #### lpui_quick_reply_button_border_width
 Quick Replies button border width.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 1dp
 
 #### quick_reply_button_radius
 Quick Replies button radius.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 24dp
 
 #### lp_quick_replies_button_text_limit
@@ -2203,7 +2203,7 @@ Define the font of the pci secure form.
 * **Default value:** No value (use device's default)
 
 
-#### lpmessaging_ui_secure_form_progress_bar.xml	
+#### lpmessaging_ui_secure_form_progress_bar.xml
 Default progress bar vector drawable for PCI secure form (after pressing to fill the form, the button changes to progress bar until we can show the form). To Override this resource, create a vector drawable under the android drawable folder with the same resource name.
 
 
@@ -2829,7 +2829,7 @@ If both `show_yes_no_question` and [show_agent_details_csat](#show_agent_details
 
 
 #### show_csat_thank_you
-Define if "thank you" screen will appear after submitting the survey. 
+Define if "thank you" screen will appear after submitting the survey.
 
 * **Type:** bool  
 * **Default value:** true (show)
@@ -2877,14 +2877,14 @@ Enable or disable structured content feature.
 #### structured_content_border_color
 Color code for the structured content bubble outline color.
 
-* **Type:** color 
+* **Type:** color
 * **Default value:** @color/lp_agent_message_bubble_color
 
 
 #### structured_content_border_width
 Integer in dp for the bubble stroke width of the structured content bubble.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 1dp
 
 
@@ -2910,7 +2910,7 @@ Set the host app's Google Map key to enable map views in Structured Content.
 
 
 #### structured_content_background_color
-The color of the background of structured content elements. 
+The color of the background of structured content elements.
 
 * **Type:** color
 * **Default value:** @color/lp_transparent
@@ -2919,28 +2919,28 @@ The color of the background of structured content elements.
 #### structured_content_bottom_right_radius
 Configuration for bottom right corner radius of structured content card.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 5dp
 
 
 #### structured_content_bottom_left_radius
 Configuration for top left corner radius of structured content card.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 5dp
- 
- 
-#### structured_content_top_right_radius
-Configuration for top right corner radius of structured content card. 
 
-* **Type:** dimen 
+
+#### structured_content_top_right_radius
+Configuration for top right corner radius of structured content card.
+
+* **Type:** dimen
 * **Default value:** 5dp
 
 
 #### structured_content_bottom_left_radius
 Configuration for bottom left corner radius of structured content card.
 
-* **Type:** dimen 
+* **Type:** dimen
 * **Default value:** 5dp
 
 
@@ -2958,21 +2958,21 @@ The color of text elements in structured content.
 
 
 #### sc_buttonElement_background_color
-The color of button in button elements in structured content. 
+The color of button in button elements in structured content.
 
 * **Type:** color
 * **Default value:** @color/lp_colorSurface
 
 
 #### sc_textElement_text_color
-The color of text in text elements in structured content. 
+The color of text in text elements in structured content.
 
 * **Type:** color
 * **Default value:** @color/lp_onAgentMessage_bubble_color
 
 
 #### sc_textElement_background_color
-The color of the background of structured content text elements. 
+The color of the background of structured content text elements.
 
 * **Type:** color
 * **Default value:** @color/lp_transparent
@@ -3010,7 +3010,7 @@ Color code for the text of the system messages.
 #### disableTTRPopup
 Defines whether to disable the TTR snackbar popup (true=disable) false by default.
 
-* **Type:** bool 
+* **Type:** bool
 * **Default value:** false
 
 #### show_timestamp_in_ttr_notification
@@ -3051,12 +3051,12 @@ Define the frequency of the TTR (time to response) messages.
 
 
 #### unread_indicator_bubble_enable
-Toggle the mode of the unread_indicator_bubble_enable. 
+Toggle the mode of the unread_indicator_bubble_enable.
 If **unread_indicator_bubble_enable**  is disabled, the "scroll to bottom" button will scroll to bottom of the conversation but the count indicator and message preview  will not be displayed".
 
 Note: Regardless of **unread_indicator_bubble_enable** value, the conversation screen will always scrolls to the last position where the user left off.
 
-* **Type:** bool 
+* **Type:** bool
 * **Default value:** true
 
 #### unread_indicator_bubble_text_color
@@ -3282,16 +3282,16 @@ Color code for the agent default icon in the avatar next to the bubble.
 </div>
 
 
-#### lp_messaging_ui_ic_agent_avatar	
-Default agent avatar appearing next to an agent’s bubble when no avatar URL is assigned on LiveEngage and on agent avatar appearing on the action bar. 
+#### lp_messaging_ui_ic_agent_avatar
+Default agent avatar appearing next to an agent’s bubble when no avatar URL is assigned on LiveEngage and on agent avatar appearing on the action bar.
 
 If you want to define the background color for this avatar, override [agent_avatar_background_color](#agent_avatar_background_color) resource ID.
 
 
-#### lp_messaging_ui_brand_logo	
-Default brand avatar on the avatar next to brand bubble (the first brand message) and on agent avatar appearing on the action bar before an agent is assigned. 
+#### lp_messaging_ui_brand_logo
+Default brand avatar on the avatar next to brand bubble (the first brand message) and on agent avatar appearing on the action bar before an agent is assigned.
 
-If you want to define the background color for this avatar, override [brand_logo_background_color](#brand_logo_background_color) resource ID. Only relevant for bubble brand’s avatar. 
+If you want to define the background color for this avatar, override [brand_logo_background_color](#brand_logo_background_color) resource ID. Only relevant for bubble brand’s avatar.
 
 Background color of the agent avatar on action bar is [agent_avatar_background_color](#agent_avatar_background_color).
 
@@ -3429,7 +3429,7 @@ color of the stroke (border) of the form invitation bubble.
 
 
 #### agent_bubble_pci_form_invitation_button_text_color
-color of the text on PCI form invitation bubble button 
+color of the text on PCI form invitation bubble button
 
 <div style="float: left; width: 50%;height: 140px;">
    <ul>
@@ -3517,7 +3517,7 @@ color of the icon in the PCI form invitation bubble.
 
 
 #### agent_bubble_pci_form_invitation_progressBar_color
-color of progress bar 
+color of progress bar
 
 * **Type:** color
 * **Default value:** @color/lp_progress_bar_color
@@ -3896,8 +3896,8 @@ Color code for the read status icon (if enable).
 &nbsp;
 </div>
 
- 
- 
+
+
 #### consumer_bubble_received_status_color
 Color code for the received status icon (if enable).
 
@@ -4019,7 +4019,7 @@ Color of audio limit in text view.
 * **Default value:** #FFFFFF
 
 #### end_bubble_bottom_left_radius
-Corner radius of bottom left consumer bubbles (on the right side). 
+Corner radius of bottom left consumer bubbles (on the right side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4041,7 +4041,7 @@ Corner radius of bottom left consumer bubbles (on the right side).
 
 
 #### end_bubble_top_left_radius
-Corner radius of top left consumer bubbles (on the right side). 
+Corner radius of top left consumer bubbles (on the right side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4063,7 +4063,7 @@ Corner radius of top left consumer bubbles (on the right side).
 
 
 #### end_bubble_top_right_radius
-Corner radius of top right consumer bubbles (on the right side). 
+Corner radius of top right consumer bubbles (on the right side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4085,7 +4085,7 @@ Corner radius of top right consumer bubbles (on the right side).
 
 
 #### end_bubble_bottom_right_radius
-Corner radius of bottom right consumer bubbles (on the right side). 
+Corner radius of bottom right consumer bubbles (on the right side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4107,7 +4107,7 @@ Corner radius of bottom right consumer bubbles (on the right side).
 
 
 #### start_bubble_bottom_left_radius
-Corner radius of the bottom left agent/brand bubbles (on the left side). 
+Corner radius of the bottom left agent/brand bubbles (on the left side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4130,7 +4130,7 @@ Corner radius of the bottom left agent/brand bubbles (on the left side).
 
 
 #### start_bubble_top_left_radius
-Corner radius of the top left agent/brand bubbles (on the left side). 
+Corner radius of the top left agent/brand bubbles (on the left side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4153,7 +4153,7 @@ Corner radius of the top left agent/brand bubbles (on the left side).
 
 
 #### start_bubble_top_right_radius
-Corner radius of the top right agent/brand bubbles (on the left side). 
+Corner radius of the top right agent/brand bubbles (on the left side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4176,7 +4176,7 @@ Corner radius of the top right agent/brand bubbles (on the left side).
 
 
 #### start_bubble_bottom_right_radius
-Corner radius of the bottom right agent/brand bubbles (on the left side). 
+Corner radius of the bottom right agent/brand bubbles (on the left side).
 
 <div style="float: left; width: 50%;height: 73px;">
    <ul>
@@ -4198,7 +4198,7 @@ Corner radius of the bottom right agent/brand bubbles (on the left side).
 
 
 #### unread_indicator_bubble_radius
-Corner radius of the unread messages bubble. 
+Corner radius of the unread messages bubble.
 
 <div style="float: left; width: 50%;height: 120px;">
    <ul>
@@ -4264,7 +4264,7 @@ Action mode background color.
 * **Type:** color
 * **Default value:** @color/lp_textColorSecondary
 
---- 
+---
 
 ### Deprecated Attributes
 
@@ -4279,4 +4279,3 @@ String. The name of a resource to use as the large icon of the push notification
 
 #### enter_message_divider_visible
 Bool. Determine if the Enter Message edit text divider is visible or not.
-

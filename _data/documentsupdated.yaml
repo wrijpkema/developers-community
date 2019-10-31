@@ -164,7 +164,7 @@
           - subpagename: Email Integrations
           #- subpagename: Knowledge Base Integrations
           - subpagename: LivePerson Agent Escalation Integrations
-          - subpagename: FaaS Integrations
+          - subpagename: LivePerson Functions integrations
           - subpagename: Web View Integration API
       - pagename: Scripting Functions
         subpages:
@@ -174,18 +174,23 @@
           - subpagename: Get and Set Conversation Flow Data
           - subpagename: Sending Messages
           #- subpagename: Context Session Store Wrapper
+      - pagename: Keywords
       - pagename: Testing & Deployment
         subpages:
           - subpagename: Debugging
           - subpagename: Deploying to LiveEngage
-      #- pagename: Keyword Triggers
       #- pagename: Operations
+      - pagename: Common Use Cases
       - pagename: Best Practices
         subpages:
-          - subpagename: Transfer to an Agent or Bot
-          - subpagename: Using Environment Variables
+          - subpagename: Environment Variables
           #- subpagename: Common Conversation Patterns
-          - subpagename: Versions, Releases, & Change Management
+          - subpagename: Versions & Releases
+          - subpagename: Reusable Components
+      - pagename: Troubleshooting
+        subpages:
+          - subpagename: Interactions
+          - subpagename: Transfer to an Agent or Bot
   - documentname: Maven AI
     pages:
       - pagename: Overview
@@ -211,10 +216,10 @@
         subpages:
           - subpagename: Overview
           - subpagename: Methods
-  - documentname: LiveIntent
-    pages:
-      - pagename: Overview
-      - pagename: Dashboard
+  # - documentname: LiveIntent
+  #   pages:
+  #     - pagename: Overview
+  #     - pagename: Dashboard
   - documentname: Intent Builder
     pages:
       - pagename: Overview
@@ -225,6 +230,7 @@
   - documentname: Bot Analytics
     pages:
       - pagename: Overview
+      - pagename: Troubleshooting
   - documentname: Bot Accounts
     pages:
       - pagename: Permissions per Role
@@ -241,6 +247,7 @@
       - pagename: Amazon Lex
       - pagename: Microsoft Bot Framework
       - pagename: Custom Integration
+      - pagename: Hook Configuration
   - documentname: Messaging Agent SDK
     pages:
       - pagename: Overview
@@ -744,7 +751,8 @@
       - subpagename: Interface and Class Definitions
     - pagename: SDK Attributes
       subpages:
-      - subpagename: Attributes
+      - subpagename: 5.0 and above
+      - subpagename: 4.1 and below
       - subpagename: Attributes Design Sheet
     - pagename: String Localization
       subpages:
@@ -1020,6 +1028,8 @@
             - subpagename: getEngagementState
     - documentname: LE-Tag
       pages:
+        - pagename: Overview
+        - pagename: SDEs
         - pagename: Events
           subpages:
             - subpagename: Event Binding
