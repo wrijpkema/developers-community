@@ -950,21 +950,10 @@
       - pagename: Configuration
       - pagename: How It Works
       - pagename: Detailed API
-    - documentname: LiveEngage Applications
+    - documentname: LivePerson Applications
       pages:
-        - pagename: What Is a LiveEngage Application?
-        - pagename: Installing LiveEngage Applications
-    - documentname: Authorizing LiveEngage Applications
-      pages:
-        - pagename: Overview
-        - pagename: Methods
-          subpages:
-          - subpagename: Authorization Request
-          - subpagename: Refresh Request
-          - subpagename: Token Request
-        - pagename: Samples
-          subpages:
-            - subpagename: Application Login Sample App
+        - pagename: What Is a LivePerson Application?
+        - pagename: Installing LivePerson Applications
     - documentname: Login Service API
       basedomain: https://{domain}/api/account/{accountId}
       pages:
