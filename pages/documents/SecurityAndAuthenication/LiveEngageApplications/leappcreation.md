@@ -13,7 +13,7 @@ indicator: both
 
 ### Overview
 
-In order to install a private application, you will need to upload a valid JSON schema. You can do this by navigating to the Applications area, **insert more instructions here**.
+In order to install a private application, you will need to upload a valid JSON schema. You can do this by navigating to the Applications area by clicking on the "puzzle" icon on the left hand menu in LiveEngage. Navigate to the "Private apps" tab by clicking on the "Private apps" button at the top left side of the Applications area. Then, click on the "ADD YOUR PRIVATE APP" box which will appear in the tab. Choose a valid JSON schema as detailed below to upload your application.
 
 **Screenshot**
 
@@ -157,3 +157,13 @@ Below you will find a sample of a valid LivePerson Application schema, along wit
 |goal |  Indicates what you want to achieve with the engagement | string| Yes |supported values: url, purchase_total, num_of_pages, lead, service_activity |
 |consumer_identity | If the consumer does or doesn't have to be an authenticated user |  array| Yes | The value has to be set to auth. supported values: auth, unauth|
 |language_selection | Indicates the possibility of language selection  |  boolean |Yes ||
+
+### Quicklaunch menu
+
+Applications can be added to the QuickLaunch menu in the LivePerson UI. For applications to be available in the QuickLaunch menu, some criteria have to be met. In case of a Private LivePerson Application the JSON Manifest should contain the following properties:
+
+* `"quick_launch_enabled" : true`,
+
+* non-empty `entry_uri`,
+
+* the user profile should match one of the profiles listed in `enabled_for_profiles`.
