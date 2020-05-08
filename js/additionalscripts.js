@@ -78,6 +78,22 @@ function setImportantIcon() {
 		$(this).prepend(importantIcon);
 	});
 }
+
+function breadClick (event) {
+    event.preventDefault();
+	let breadText = event.target.innerText;
+	let arr =document.querySelectorAll(".highlightlink")
+	let targetLink=null;
+	for (var item of arr) {
+
+		if (item.innerText===breadText){
+			targetLink =item;
+		}
+	}
+	
+    (targetLink)? targetLink.click() : null;
+}
+
 function navigateContent(url) {
 	//call ajax with the target url
 	$.ajax(url)

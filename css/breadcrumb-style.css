@@ -63,8 +63,8 @@
 
 .breadcrumbs .breadcrumb-item {
   font-size: 0.9em;
-  color: var(--grey-button-icons);
-  ;
+  color: var(--electric-blue);
+  cursor: pointer;
   font-family: "Open Sans";
   font-weight: 300;
 }

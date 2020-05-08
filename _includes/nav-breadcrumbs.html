@@ -2,15 +2,15 @@
   <nav class="breadcrumbs breadhidden hidden-sm-down">
 
     {% if page.categoryname %}
-    <a class="breadcrumb-item" >{{ page.categoryname }}</a>
+    <a class="breadcrumb-item" onclick="breadClick(event)">{{ page.categoryname }}</a>
     {% endif %}
     {% if page.documentname %}
-     <a class="breadcrumb-item" >{{ page.documentname }}</a>
+     <a class="breadcrumb-item" onclick="breadClick(event)">{{ page.documentname }}</a>
     {% endif %}
     {% if page.subfoldername %}
-     <a class="breadcrumb-item" >{{ page.subfoldername }}</a>
+     <a class="breadcrumb-item" onclick="breadClick(event)">{{ page.subfoldername }}</a>
     {% endif %}
-    <a class="breadcrumb-item no-after" >{{ page.pagename }}</a>
+    <a class="breadcrumb-item no-after">{{ page.pagename }}</a>
 
 
   </nav>

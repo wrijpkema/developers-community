@@ -10,15 +10,12 @@
     <a class="highlightlink" href="">
       <button class="sidebarbutton"><span></span>
       </button>
-      <span>
-        {{ category.categoryname  }}
-      </span></a>
+      <span>{{ category.categoryname }}</span></a>
     <ul>
       {% for document in category.documents %}
       {% if document.pages %}
       <li class="folder innerfolder sidebarcategory">
-        <a class="highlightlink" href=""><button class="sidebarbutton innerArrowAdjust"><span></span></button><span>
-            {{ document.documentname }}</span></a>
+        <a class="highlightlink" href=""><button class="sidebarbutton innerArrowAdjust"><span></span></button><span>{{ document.documentname }}</span></a>
         <ul>
           {% for page in document.pages %}
           {% if page.subpages %}
@@ -54,14 +51,12 @@
   </li>
   {% else %}
   <li class="folder topfolder lowerimage">
-    <a class="highlightlink" href=""><button class="sidebarbutton"><span></span></button><span>
-        {{ category.categoryname  }}</span></a>
+    <a class="highlightlink" href=""><button class="sidebarbutton"><span></span></button><span>{{ category.categoryname  }}</span></a>
     <ul>
       {% for document in category.documents %}
       {% if document.pages %}
       <li class="folder innerfolder sidebarcategory">
-        <a class="highlightlink" href=""><button class="sidebarbutton innerArrowAdjust"><span></span></button><span>
-            {{ document.documentname }}</span></a>
+        <a class="highlightlink" href=""><button class="sidebarbutton innerArrowAdjust"><span></span></button><span>{{ document.documentname }}</span></a>
         <ul>
           {% for page in document.pages %}
           {% if page.subpages %}
