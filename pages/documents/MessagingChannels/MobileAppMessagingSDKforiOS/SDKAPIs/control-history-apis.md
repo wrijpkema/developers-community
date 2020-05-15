@@ -60,7 +60,7 @@ You have three relevant parameters for `LPConversationHistoryControlParam`:
 
 #### LPConversationsHistoryStateToDisplay
 
-Use to present open conversations or closed conversations or all conversations. To present all conversations, do not provide a value.
+Use to present open conversations or closed conversations or all conversations. To present all conversations, provide value 'NONE'.
 
    ```swift
    enum LPConversationsHistoryStateToDisplay: Int {
