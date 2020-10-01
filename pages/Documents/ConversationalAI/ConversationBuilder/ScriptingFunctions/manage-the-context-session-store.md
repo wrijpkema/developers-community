@@ -8,7 +8,7 @@ categoryname: "Conversational AI"
 documentname: Conversation Builder
 subfoldername: Scripting Functions
 permalink: conversation-builder-scripting-functions-manage-the-context-session-store.html
-indicator: both
+indicator: messaging
 ---
 
 The Context Session Store is a cloud-based repository for storing and retrieving session state attributes, so they can be used throughout the conversational journey. This allows for continuity in conversations as context can be transferred between agents and bots, enabling a warm hand-off. The attributes are stored as key/value pairs.
